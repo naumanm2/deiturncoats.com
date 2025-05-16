@@ -1,0 +1,94 @@
+{
+  "site": {
+    "title": "DEI Turncoats",
+    "description": "Lorem ipsum description"
+  },
+  "hero": {
+    "heroHeading": "Out with old",
+    "heroCTA": "Turn your world inside out"
+  },
+  "about": {
+    "heading": "About",
+    "paragraph": "About us lorem ipsum dolor sit amet"
+  },
+  "products": {
+    "productsTitle": "Products",
+    "products": [
+      {
+        "id": "1",
+        "title": "Product 1",
+        "price": "TBA €",
+        "deiInImage": "/png/1-in.png",
+        "deiInImageAlt": "Dei In Image Alt Description",
+        "deiOutImage": "/png/1-out.png",
+        "deiOutImageAlt": "Dei Out Image Alt Description",
+        "DeiInDescription": "Product 1 DEI is In description lorem ipsum",
+        "DeiOutDescription": "Product 1 DEI is Out description lorem ipsum",
+        "availableSizes": [
+          "white male 44",
+          "white male 46",
+          "white male 48",
+          "white male 50",
+          "white male 52"
+        ],
+        "nonAvailableSizes": [
+          "female 34",
+          "female 36",
+          "female 38",
+          "female 40",
+          "female 42"
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Product 2",
+        "price": "TBA €",
+        "deiInImage": "/png/2-in.png",
+        "deiInImageAlt": "Dei In Image Alt Description",
+        "deiOutImage": "/png/2-out.png",
+        "deiOutImageAlt": "Dei Out Image Alt Description",
+        "DeiInDescription": "Product 2 DEI is In description lorem ipsum",
+        "DeiOutDescription": "Product 2 DEI is Out description lorem ipsum",
+        "availableSizes": [
+          "white male 44",
+          "white male 46",
+          "white male 48",
+          "white male 50",
+          "white male 52"
+        ],
+        "nonAvailableSizes": [
+          "female 34",
+          "female 36",
+          "female 38",
+          "female 40",
+          "female 42"
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Product 3",
+        "price": "TBA €",
+        "deiInImage": "/png/3-in.png",
+        "deiInImageAlt": "Dei In Image Alt Description",
+        "deiOutImage": "/png/3-out.png",
+        "deiOutImageAlt": "Dei Out Image Alt Description",
+        "DeiInDescription": "Product 3 DEI is In description lorem ipsum",
+        "DeiOutDescription": "Product 3 DEI is Out description lorem ipsum",
+        "availableSizes": [
+          "white male 44",
+          "white male 46",
+          "white male 48",
+          "white male 50",
+          "white male 52"
+        ],
+        "nonAvailableSizes": [
+          "female 34",
+          "female 36",
+          "female 38",
+          "female 40",
+          "female 42"
+        ]
+      }
+    ]
+  }
+}
