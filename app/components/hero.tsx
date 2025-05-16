@@ -18,8 +18,8 @@ export default function Hero({ heading, ctaText, ctaLink }: heroOptions) {
         <div className="absolute inset-0 bg-black opacity-20 rounded-2xl" />
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-white h-full">
-          <h1>{heading}</h1>
+        <div className="relative z-10 flex uppercase flex-col items-center justify-center text-white h-full">
+          <h1 className="tracking-tighter">{heading}</h1>
           {ctaText && <CTA ghost={true} text={ctaText} />}
         </div>
       </div>

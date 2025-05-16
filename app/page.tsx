@@ -4,6 +4,7 @@ import en from "@/app/content/en.json";
 import Hero from "./components/hero";
 import CardCollection from "./components/cardCollection";
 import Card from "./components/card";
+import Text from "./components/text";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           />
         ))}
       </CardCollection>
+      <Text heading={en.about.heading} paragraph={en.about.paragraph} />
     </>
   );
 }
