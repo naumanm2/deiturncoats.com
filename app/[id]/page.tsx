@@ -7,11 +7,7 @@ import en from "@/app/content/en.json";
 import CardCollection from "../components/cardCollection";
 import Card from "../components/card";
 
-type Props = {
-  params: Promise<{ id: string }>;
-};
-
-export default async function ProductPage({ params }: Props) {
+export default async function ProductPage({params}: {params: Promise<{ id: string }>}) {
   const { id } = await params;
   const product = products.products.items.find((p) => p.id === id);
 
