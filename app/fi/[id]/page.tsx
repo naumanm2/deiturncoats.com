@@ -7,14 +7,9 @@ import fi from "@/app/content/fi.json";
 import CardCollection from "@/app/components/cardCollection";
 import Card from "@/app/components/card";
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
 
-export default async function ProductPage({ params }: Props) {
-  const { id } = await params;
+export default async function ProductPage({ params }: { params: { id: string } }) {
+  const { id } = params;
   const product = products.products.items.find((p) => p.id === id);
 
   if (!product) {
