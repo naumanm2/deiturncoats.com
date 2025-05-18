@@ -152,7 +152,6 @@ export default function Nav() {
       : `/fi${paths}`; // EN → FI
 
     router.push(newPath);
-
   };
 
   return (
