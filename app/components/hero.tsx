@@ -7,7 +7,7 @@ type heroOptions = {
   ctaLink?: string;
 };
 
-export default function Hero({ heading, ctaText, ctaLink }: heroOptions) {
+export default function Hero({ heading, ctaText }: heroOptions) {
   return (
     <>
       <div className="relative w-full aspect-[9/16] md:aspect-[2/1]">

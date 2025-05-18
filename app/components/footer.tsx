@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo from "@/app/assets/svg/logo-round.svg";
+// import Logo from "@/app/assets/svg/logo-round.svg";
 import LogoHorizontal from "@/app/assets/svg/logo-horizontal.svg";
 import Globe from "@/app/assets/svg/globe.svg";
 import ShoppingBasket from "@/app/assets/svg/shopping-basket.svg";

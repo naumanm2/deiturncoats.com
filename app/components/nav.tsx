@@ -1,46 +1,46 @@
 "use client";
 
-import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Logo from "@/app/assets/svg/logo-horizontal.svg";
 import GlobeIcon from "@/app/assets/svg/globe.svg";
 import ShoppingBasketIcon from "@/app/assets/svg/shopping-basket.svg";
 import Link from "next/link";
 import CTA from "./cta";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-interface menuOptions {
-  open: boolean;
-  setOpen: Dispatch<SetStateAction<boolean>>;
-}
+// interface menuOptions {
+//   open: boolean;
+//   setOpen: Dispatch<SetStateAction<boolean>>;
+// }
 
-const Menu = ({ open, setOpen }: menuOptions) => {
-  return (
-    <>
-      {open && (
-        <div className="w-full flex-1 h-dvh fixed top-0 z-10 p-2 bg-background">
-          <div className="flex flex-col h-full justify-end items-start gap-2 pb-32">
-            <Link
-              href="/"
-              onClick={() => setOpen(!open)}
-              className="font-medium text-4xl underline p-2 hover:underline"
-            >
-              Home
-            </Link>
-            <Link
-              href="/products"
-              onClick={() => setOpen(!open)}
-              className="font-medium text-4xl underline p-2 hover:underline"
-            >
-              Products
-            </Link>
-          </div>
-        </div>
-      )}
-    </>
-  );
-};
+// const Menu = ({ open, setOpen }: menuOptions) => {
+//   return (
+//     <>
+//       {open && (
+//         <div className="w-full flex-1 h-dvh fixed top-0 z-10 p-2 bg-background">
+//           <div className="flex flex-col h-full justify-end items-start gap-2 pb-32">
+//             <Link
+//               href="/"
+//               onClick={() => setOpen(!open)}
+//               className="font-medium text-4xl underline p-2 hover:underline"
+//             >
+//               Home
+//             </Link>
+//             <Link
+//               href="/products"
+//               onClick={() => setOpen(!open)}
+//               className="font-medium text-4xl underline p-2 hover:underline"
+//             >
+//               Products
+//             </Link>
+//           </div>
+//         </div>
+//       )}
+//     </>
+//   );
+// };
 
 const LanguageOptions = ({
   paths,
@@ -52,10 +52,6 @@ const LanguageOptions = ({
   handleClick: React.MouseEventHandler;
 }) => {
   const fi = language === "fi";
-
-  console.log("language: ", language);
-  console.log("sliced path: ", paths.slice(1, 3));
-  console.log("substringed path: ", paths.substring(3));
 
   return (
     <div className="h-0 overflow-visible" onClick={handleClick}>
@@ -76,7 +72,6 @@ const LanguageOptions = ({
             "hover:bg-[#00000010] w-full p-4 pl-4 pr-16 rounded-t-2xl border-b-2 border-[#00000008] text-sm",
             !fi && "font-bold"
           )}
-          
         >
           EN
         </Link>
@@ -101,7 +96,7 @@ const ShoppingBasket = ({
   language: string;
   handleClick: React.MouseEventHandler;
 }) => {
-  const randomNumber = Math.random();
+  const randomNumber = Math.floor(Math.random() * 3) + 1;
   const fi = language === "fi";
   return (
     <div
@@ -127,17 +122,18 @@ const ShoppingBasket = ({
 
 export default function Nav() {
   const paths = usePathname();
+  const router = useRouter();
 
   const [language, setLanguage] = useState("en");
   const [langOpen, setLangOpen] = useState(false);
   const [basketOpen, setBasketOpen] = useState(false);
 
   useEffect(() => {
-    console.log("sliced path: ", paths.slice(1, 3));
-    if (paths.length > 0 && paths.slice(1, 3) == "fi") {
+    console.log("sliced path: ", paths.startsWith("/fi"));
+    if (paths.length > 0 && paths.startsWith("/fi")) {
       setLanguage("fi");
     }
-  }, []);
+  }, [paths]);
 
   const handleLangClick = () => {
     setBasketOpen(false);
@@ -147,6 +143,16 @@ export default function Nav() {
   const handleBasketClick = () => {
     setLangOpen(false);
     setBasketOpen(!basketOpen);
+  };
+
+  const switchLanguage = () => {
+    const isFinnish = paths.startsWith("/fi");
+    const newPath = isFinnish
+      ? paths.replace(/^\/fi/, "") || "/" // FI → EN
+      : `/fi${paths}`; // EN → FI
+
+    router.push(newPath);
+
   };
 
   return (
@@ -183,7 +189,7 @@ export default function Nav() {
                 <LanguageOptions
                   paths={paths}
                   language={language}
-                  handleClick={() => setLangOpen(false)}
+                  handleClick={() => switchLanguage()}
                 />
               )}
             </div>

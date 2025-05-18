@@ -35,7 +35,7 @@ export default async function ProductPage({ params }: Props) {
         deiOutImageSrc={product.deiOutImage}
         deiOutImageAlt={product.deiOutImageAlt}
       />
-      <CardCollection title="Related products">
+      <CardCollection title="Muut tuotteet">
         {fi.products.items
           .filter((p) => p.id != id)
           .map((product, index) => (

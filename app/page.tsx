@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 import en from "@/app/content/en.json";
 import Hero from "./components/hero";
