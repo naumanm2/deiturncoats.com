@@ -1,5 +1,5 @@
 // app/not-found.tsx
-export default function NotFound() {
+export default function Page() {
   return (
     <div className="p-8 text-center">
       <h1 className="text-3xl font-bold">Page Not Found</h1>
