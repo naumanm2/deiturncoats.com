@@ -5,12 +5,18 @@
   --foreground: #171717;
   --brand: #1b7f85;
   --brand-border: #037077;
+  --brand-hover: #03707795;
+  --brand-active: #03707790;
   --disabled-background: #d3d3d3;
   --disabled-border: #cfcfcf;
   --disabled-color: #7f7f7f;
-  --unselected-background: transparent;
+  --unselected-background: white;
+  --unselected-background-hover: #00000010;
   --unselected-color: #666666;
   --unselected-border: #edf0f1;
+  --selected-background: #181919;
+  --selected-color: #ffffff;
+  --selected-border: #000000;
 }
 
 @theme inline {
@@ -18,12 +24,18 @@
   --color-foreground: var(--foreground);
   --color-brand: var(--brand);
   --color-brand-border: var(--brand-border);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-active: var(--brand-active);
   --color-disabled-background: var(--disabled-background);
   --color-disabled-border: var(--disabled-border);
   --color-disabled-color: var(--disabled-color);
   --color-unselected-background: var(--unselected-background);
+  --color-unselected-background-hover: var(--unselected-background-hover);
   --color-unselected-border: var(--unselected-border);
   --color-unselected-color: var(--unselected-color);
+  --color-selected-background: var(--selected-background);
+  --color-selected-border: var(--selected-border);
+  --color-selected-color: var(--selected-color);
 }
 
 @layer utilities {
@@ -63,4 +75,10 @@ h3 {
   font-weight: 700;
   letter-spacing: -0.05em;
   font-size: clamp(1.44rem, 1.02vi + 1.19rem, 2rem);
+}
+
+h4 {
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  font-size: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
 }

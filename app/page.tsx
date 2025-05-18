@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Hero heading={en.hero.heroHeading} ctaText={en.hero.heroCTA} />
       <CardCollection title={en.products.productsTitle}>
-        {en.products.products.map((product, index) => (
+        {en.products.items.map((product, index) => (
           <Card
             key={index}
             imagePath={product.deiInImage}
@@ -19,6 +19,7 @@ export default function Home() {
             title={product.title}
             description={product.DeiInDescription}
             price={product.price}
+            address={`/${product.id}`}
           />
         ))}
       </CardCollection>

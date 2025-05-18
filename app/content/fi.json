@@ -4,19 +4,19 @@
     "description": "Lorem ipsum description"
   },
   "hero": {
-    "heroHeading": "Out with old",
+    "heroHeading": "Uusi on uusi uusi",
     "heroCTA": "Turn your world inside out"
   },
   "about": {
-    "heading": "About",
-    "paragraph": "About us lorem ipsum dolor sit amet"
+    "heading": "Meistä",
+    "paragraph": "Meistä lorem ipsum dolor sit amet"
   },
   "products": {
-    "productsTitle": "Products",
+    "productsTitle": "Tuotteet",
     "items": [
       {
         "id": "1",
-        "title": "Product 1",
+        "title": "Tuote 1",
         "price": "TBA €",
         "deiInImage": "/png/1-in.png",
         "deiInImageAlt": "Dei In Image Alt Description",

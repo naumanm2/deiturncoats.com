@@ -8,10 +8,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex-1 flex pb-48 justify-start items-start flex-row gap-4 px-4 md:px-8">
-      <div className="[&>svg]:h-12 flex-1">
+    <footer className="flex-1 flex pb-48 justify-between items-center flex-row gap-4 px-4 md:px-8">
+      <Link className="[&>svg]:h-12" href="/">
         <LogoHorizontal />
-      </div>
+      </Link>
       <div className="flex flex-row gap-2 justify-end max-md:flex-1">
         <button className="p-4 [&>svg]:h-6 hover:bg-[#00000010] rounded-lg">
           <Globe />
