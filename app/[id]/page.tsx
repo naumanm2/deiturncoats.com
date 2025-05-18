@@ -14,7 +14,7 @@ type Props = {
 };
 
 export default async function ProductPage({ params }: Props) {
-  const { id } = await params;
+  const { id } = params;
   const product = products.products.items.find((p) => p.id === id);
 
   if (!product) {
