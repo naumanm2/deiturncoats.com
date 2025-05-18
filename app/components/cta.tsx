@@ -20,7 +20,7 @@ export default function CTA({ text, ghost, primary, disabled }: ctaOptions) {
         primary &&
           "bg-brand font-bold py-2 border-[1px] border-brand-border hover:bg-brand-hover active:bg-brand-active",
         disabled &&
-          "bg-disabled-background py-2 text-disabled-color border-[1px] border-disabled-border font-medium"
+          "bg-disabled-background py-2 text-disabled-color hover:bg-disabled-background border-[1px] border-disabled-border font-medium"
       )}
     >
       {text}
