@@ -50,7 +50,7 @@ export default async function ProductPage({ params }: { params: { id: string } }
   );
 }
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ id: string }[]> {
   return products.products.items.map((product) => ({
     id: product.id,
   }));
