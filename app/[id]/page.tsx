@@ -8,7 +8,7 @@ import CardCollection from "../components/cardCollection";
 import Card from "../components/card";
 
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
+export default function ProductPage({ params }: { params: { id: string } }) {
   const { id } = params;
   const product = products.products.items.find((p) => p.id === id);
 
