@@ -8,8 +8,8 @@ import CardCollection from "../components/cardCollection";
 import Card from "../components/card";
 
 
-export default function ProductPage({ params }: { params: { id: string } }) {
-  const { id } = params;
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   const product = products.products.items.find((p) => p.id === id);
 
   if (!product) {
@@ -50,7 +50,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
   );
 }
 
-export async function generateStaticParams(): Promise<{ id: string }[]> {
+export async function generateStaticParams() {
   return products.products.items.map((product) => ({
     id: product.id,
   }));
