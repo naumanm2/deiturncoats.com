@@ -82,3 +82,7 @@ h4 {
   letter-spacing: -0.05em;
   font-size: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
 }
+
+p {
+  line-height:110%;
+}

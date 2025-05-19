@@ -95,7 +95,7 @@ const ShoppingBasket = ({
       className="h-min w-0 overflow-visible flex flex-col items-end"
       onClick={handleClick}
     >
-      <div className="w-sm flex flex-col gap-8 p-8 bg-white rounded-2xl border-[1px] border-[#00000005] font-bold shadow-md">
+      <div className="max-w-sm w-[94vw] flex flex-col gap-8 p-8 bg-white rounded-2xl border-[1px] border-[#00000005] font-bold shadow-md">
         <p>
           {fi
             ? "Ostoskorisi on tyhjä"
@@ -140,7 +140,7 @@ export default function Nav({ footer }: { footer?: boolean }) {
     <div className="flex flex-col">
       <div className="flex flex-row justify-between items- box-border max-w-screen-[1720px] h-16 md:h-24 p-4 md:p-8 w-full pb-0 md:pb-0 z-20 top-0">
         <Link
-          className="[&>svg]:h-12 [&>svg]:w-auto text-left"
+          className="[&>svg]:md:h-12 [&>svg]:h-8 h-min self-center [&>svg]:w-auto text-left"
           href={language == "fi" ? "/fi" : "/"}
         >
           <Logo />
@@ -158,7 +158,7 @@ export default function Nav({ footer }: { footer?: boolean }) {
               </Link>
             </div> */}
           </div>
-          <div className="flex flex-row gap-2 justify-end max-md:flex-1">
+          <div className="flex flex-row gap-0 md:gap-2 justify-end max-md:flex-1">
             <div
               className={cn(
                 "flex flex-col gap-2 items-end",
@@ -166,7 +166,7 @@ export default function Nav({ footer }: { footer?: boolean }) {
               )}
             >
               <button
-                className="p-5 [&>svg]:h-16 w-16 h-16 flex items-center justify-center hover:bg-[#00000010] rounded-lg"
+                className="p-3 md:p-4 [&>svg]:h-16 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:bg-[#00000010] rounded-lg"
                 onClick={() => handleLangClick()}
               >
                 <GlobeIcon />
@@ -182,7 +182,7 @@ export default function Nav({ footer }: { footer?: boolean }) {
               )}
             >
               <button
-                className="p-5 [&>svg]:h-16 w-16 h-16 flex items-center justify-center hover:bg-[#00000010] rounded-lg"
+                className="p-3 md:p-4 [&>svg]:h-16 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:bg-[#00000010] rounded-lg"
                 onClick={handleBasketClick}
               >
                 <ShoppingBasketIcon />

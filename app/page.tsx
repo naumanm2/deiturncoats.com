@@ -8,7 +8,7 @@ import Text from "./components/text";
 export default function Home() {
   return (
     <>
-      <Hero heading={en.hero.heroHeading} ctaText={en.hero.heroCTA} />
+      <Hero heading={en.hero.heroHeading}/>
       <CardCollection title={en.products.productsTitle}>
         {en.products.items.map((product, index) => (
           <Card
