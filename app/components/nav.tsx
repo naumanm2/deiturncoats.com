@@ -10,38 +10,6 @@ import CTA from "./cta";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-// interface menuOptions {
-//   open: boolean;
-//   setOpen: Dispatch<SetStateAction<boolean>>;
-// }
-
-// const Menu = ({ open, setOpen }: menuOptions) => {
-//   return (
-//     <>
-//       {open && (
-//         <div className="w-full flex-1 h-dvh fixed top-0 z-10 p-2 bg-background">
-//           <div className="flex flex-col h-full justify-end items-start gap-2 pb-32">
-//             <Link
-//               href="/"
-//               onClick={() => setOpen(!open)}
-//               className="font-medium text-4xl underline p-2 hover:underline"
-//             >
-//               Home
-//             </Link>
-//             <Link
-//               href="/products"
-//               onClick={() => setOpen(!open)}
-//               className="font-medium text-4xl underline p-2 hover:underline"
-//             >
-//               Products
-//             </Link>
-//           </div>
-//         </div>
-//       )}
-//     </>
-//   );
-// };
-
 const LanguageOptions = ({
   paths,
   setLangOpen,
@@ -90,6 +58,7 @@ const ShoppingBasket = ({
 }) => {
   const randomNumber = Math.floor(Math.random() * 3) + 1;
   const fi = language === "fi";
+  const productSlugs = ["disney", "amazon", "google"];
   return (
     <div
       className="h-min w-0 overflow-visible flex flex-col items-end"
@@ -103,7 +72,11 @@ const ShoppingBasket = ({
         </p>
         <Link
           className="w-full [&>button]:w-full"
-          href={fi ? `/fi/${randomNumber}` : `/${randomNumber}`}
+          href={
+            fi
+              ? `/fi/${productSlugs[randomNumber-1]}`
+              : `/${productSlugs[randomNumber-1]}`
+          }
         >
           <CTA text={fi ? "Ostoksille" : "Get to Shopping"} primary />
         </Link>
@@ -146,18 +119,7 @@ export default function Nav({ footer }: { footer?: boolean }) {
           <Logo />
         </Link>
         <div className="flex-1 flex flex-row">
-          <div className="flex flex-col flex-1 max-md:hidden">
-            {/* <div className="inline-block">
-              <Link className="p-2 -m-2" href="/">
-                Home
-              </Link>
-            </div>
-            <div className="inline-block">
-              <Link className="p-2 -m-2" href="/">
-                Products
-              </Link>
-            </div> */}
-          </div>
+          <div className="flex flex-col flex-1 max-md:hidden"></div>
           <div className="flex flex-row gap-0 md:gap-2 justify-end max-md:flex-1">
             <div
               className={cn(
@@ -194,27 +156,9 @@ export default function Nav({ footer }: { footer?: boolean }) {
                 />
               )}
             </div>
-
-            {/* <button
-              className="p-4 [&>svg]:h-5 md:hidden"
-              onClick={() => setOpen(!open)}
-            >
-              {!open ? (
-                <>
-                  <div className="h-0.5 w-8 rounded-[0.4px] mb-1 bg-foreground"></div>
-                  <div className="h-0.5 w-8 rounded-[0.4px] mb-1 bg-foreground"></div>
-                </>
-              ) : (
-                <>
-                  <div className="h-0.5 w-8 rounded-[0.4px] -mb-0.5 bg-foreground origin-center rotate-[20deg]"></div>
-                  <div className="h-0.5 w-8 rounded-[0.4px] bg-foreground origin-center -rotate-[20deg]"></div>
-                </>
-              )}
-            </button> */}
           </div>
         </div>
       </div>
-      {/* <Menu setOpen={setOpen} open={open} /> */}
     </div>
   );
 }

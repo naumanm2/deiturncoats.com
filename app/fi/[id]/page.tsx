@@ -20,9 +20,12 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
       <ProductView
         id={product.id}
         headline={product.title}
+        subtitle={product.subtitle}
         price={product.price}
-        descriptionDeiIn={product.DeiInDescription}
-        descriptionDeiOut={product.DeiOutDescription}
+        deiInHeadline={product.deiInHeadline}
+        deiOutHeadline={product.deiOutHeadline}
+        descriptionDeiIn={product.deiInDescription}
+        descriptionDeiOut={product.deiOutDescription}
         availableSizes={product.availableSizes}
         nonAvailableSizes={product.nonAvailableSizes}
         deiInImageSrc={product.deiInImage}
@@ -39,7 +42,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               imagePath={product.deiInImage}
               imageAlt={product.deiInImageAlt}
               title={product.title}
-              description={product.DeiInDescription}
+              description={product.deiInDescription}
               price={product.price}
               address={`/fi/${product.id}`}
             />

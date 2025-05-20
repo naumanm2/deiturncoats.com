@@ -1,11 +1,11 @@
 import React from "react";
 import products from "@/app/content/en.json";
 import ProductView from "./productView";
-import Text from "../components/text";
+import Text from "@/app/components/text";
 
 import en from "@/app/content/en.json";
-import CardCollection from "../components/cardCollection";
-import Card from "../components/card";
+import CardCollection from "@/app/components/cardCollection";
+import Card from "@/app/components/card";
 
 
 export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
@@ -20,9 +20,12 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
       <ProductView
         id={product.id}
         headline={product.title}
+        subtitle={product.subtitle}
         price={product.price}
-        descriptionDeiIn={product.DeiInDescription}
-        descriptionDeiOut={product.DeiOutDescription}
+        deiInHeadline={product.deiInHeadline}
+        deiOutHeadline={product.deiOutHeadline}
+        descriptionDeiIn={product.deiInDescription}
+        descriptionDeiOut={product.deiOutDescription}
         availableSizes={product.availableSizes}
         nonAvailableSizes={product.nonAvailableSizes}
         deiInImageSrc={product.deiInImage}
@@ -30,7 +33,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
         deiOutImageSrc={product.deiOutImage}
         deiOutImageAlt={product.deiOutImageAlt}
       />
-      <CardCollection title="Related products">
+      <CardCollection title="Muut tuotteet">
         {en.products.items
           .filter((p) => p.id != id)
           .map((product, index) => (
@@ -39,7 +42,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
               imagePath={product.deiInImage}
               imageAlt={product.deiInImageAlt}
               title={product.title}
-              description={product.DeiInDescription}
+              description={product.deiInDescription}
               price={product.price}
               address={`/${product.id}`}
             />

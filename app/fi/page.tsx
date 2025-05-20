@@ -16,7 +16,7 @@ export default function Fi() {
             imagePath={product.deiInImage}
             imageAlt={product.deiInImageAlt}
             title={product.title}
-            description={product.DeiInDescription}
+            description={product.deiInDescription}
             price={product.price}
             address={`/fi/${product.id}`}
           />

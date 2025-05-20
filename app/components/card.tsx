@@ -2,11 +2,11 @@ import Link from "next/link";
 import React from "react";
 
 type cardOptions = {
-  imagePath: string;
-  imageAlt: string;
+  imagePath?: string;
+  imageAlt?: string;
   eyebrow?: string;
   title: string;
-  description: string;
+  description?: string;
   price: string;
   address: string;
 };
@@ -22,15 +22,20 @@ export default function Card({
 }: cardOptions) {
   return (
     <Link className="flex flex-col flex-1 group" href={address}>
-      <div className="overflow-hidden rounded-2xl mb-1">
-        <img
-          className="rounded-2xl group-hover:scale-110 ease-in-out transition-all duration-300"
-          src={imagePath}
-          alt={imageAlt}
-          width={1080}
-          height={1920}
-        />
-      </div>
+      {!imagePath ? (
+        <div className="rounded-2xl bg-zinc-300 mb-1 h-full w-full"></div>
+      ) : (
+        <div className="overflow-hidden rounded-2xl mb-1">
+          <img
+            className="rounded-2xl group-hover:scale-110 ease-in-out transition-all duration-300"
+            src={imagePath}
+            alt={imageAlt}
+            width={1080}
+            height={1920}
+          />
+        </div>
+      )}
+
       {eyebrow && <p className="text-disabled-color"></p>}
       <h3 className="group-hover:opacity-80 ease-in-out transition-all duration-300">
         {title}

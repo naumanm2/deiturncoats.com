@@ -1,30 +1,25 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import LogoVert from "@/app/assets/svg/logo-round.svg";
+import Footer from "./components/footer";
+import Container from "./components/container";
+import Nav from "./components/nav";
 
 export const metadata: Metadata = {
   title: "DEI Turncoats",
-  description: "Get ready to turn your world inside out.",
+  description: "Equality is so last season.",
 };
 
 export default function RootLayout({
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={`bg-background no-scrollbar antialiased`}>
-        <div className="h-dvh w-full flex justify-center flex-col gap-0 items-center text-center bg-[#161616] text-amber-50">
-          <LogoVert className="h-64 md:h-96 text-amber-50 pb-24" />
-          <h3 className="pb-0 mb-0 leading-tight text-">
-            OPENING SOON
-            <br />
-            5.6.2025
-          </h3>
-        </div>
-        {/* <Nav />
+        <Nav />
         <Container>{children}</Container>
-        <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
