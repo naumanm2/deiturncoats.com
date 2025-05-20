@@ -1,28 +1,12 @@
 
-import en from "@/app/content/en.json";
-import Hero from "./components/hero";
-import CardCollection from "./components/cardCollection";
-import Card from "./components/card";
-import Text from "./components/text";
+import LogoVert from "@/app/assets/svg/logo-round.svg";
 
 export default function Home() {
   return (
-    <>
-      <Hero heading={en.hero.heroHeading}/>
-      <CardCollection title={en.products.productsTitle}>
-        {en.products.items.map((product, index) => (
-          <Card
-            key={index}
-            imagePath={product.deiInImage}
-            imageAlt={product.deiInImageAlt}
-            title={product.title}
-            description={product.DeiInDescription}
-            price={product.price}
-            address={`/${product.id}`}
-          />
-        ))}
-      </CardCollection>
-      <Text heading={en.about.heading} paragraph={en.about.paragraph} />
-    </>
+    <div className="h-full w-full flex justify-center items-center text-center bg-[#161616] text-amber-50">
+      <LogoVert className="h-24 text-amber-200" />
+      <h2>OPENING SOON</h2>
+      <h2>5.6.2025</h2>
+    </div>
   );
 }
