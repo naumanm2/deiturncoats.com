@@ -1,7 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: "export",
+  async rewrites() {
+    return [
+      {
+        source: "/press",
+        destination:
+          "https://framer.com/projects/DEI-Turncoats--Tky06HNadCcZGJYnLUUi-ZS215",
+      },
+    ];
+  },
   experimental: {
     turbo: {
       rules: {
