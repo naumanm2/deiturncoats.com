@@ -23,7 +23,7 @@ export default function CTA({
     <Link
       href={url!}
       className={cn(
-        "px-3 py-1.5 rounded-full uppercase text-white -mx-0.5",
+        "px-3 py-1.5 rounded-full text-center uppercase text-white -mx-0.5",
         ghost &&
           "border-white border-[1px] flex flex-row gap-2 items-center hover:bg-white hover:text-black group transition-all duration-300 ease-in-out",
         primary &&

@@ -11,6 +11,7 @@ export default function Fi() {
         heading={fi.hero.heroHeading}
         ctaText={fi.hero.heroCTA}
         subtitle={fi.hero.heroSubtitle}
+        ctaLink={fi.url}
       />
       <CardCollection title={fi.products.productsTitle}>
         {fi.products.items.map((product, index) => (

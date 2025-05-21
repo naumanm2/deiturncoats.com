@@ -32,6 +32,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
         deiInImageAlt={product.deiInImageAlt}
         deiOutImageSrc={product.deiOutImage}
         deiOutImageAlt={product.deiOutImageAlt}
+        url={fi.url}
       />
       <CardCollection title="Muut tuotteet">
         {fi.products.items

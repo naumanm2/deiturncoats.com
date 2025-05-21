@@ -20,6 +20,7 @@ type productPageOptions = {
   deiInImageAlt?: string;
   deiOutImageSrc?: string;
   deiOutImageAlt?: string;
+  url: string;
 };
 
 export default function ProductView({
@@ -37,6 +38,7 @@ export default function ProductView({
   deiInImageAlt,
   deiOutImageSrc,
   deiOutImageAlt,
+  url
 }: productPageOptions) {
   const [deiIn, setDeiStatus] = useState(false);
   const [activePill, setActivePill] = useState(-1);
@@ -103,6 +105,7 @@ export default function ProductView({
               primary
               text={activePill < 0 ? "Valitse koko" : "Osta"}
               disabled={activePill < 0}
+              url={url}
             />
           </div>
         )}

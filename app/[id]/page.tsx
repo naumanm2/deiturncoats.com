@@ -7,8 +7,11 @@ import en from "@/app/content/en.json";
 import CardCollection from "@/app/components/cardCollection";
 import Card from "@/app/components/card";
 
-
-export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
   const product = products.products.items.find((p) => p.id === id);
 
@@ -32,6 +35,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
         deiInImageAlt={product.deiInImageAlt}
         deiOutImageSrc={product.deiOutImage}
         deiOutImageAlt={product.deiOutImageAlt}
+        url={en.url}
       />
       <CardCollection title="Muut tuotteet">
         {en.products.items

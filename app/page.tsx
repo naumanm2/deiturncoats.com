@@ -11,6 +11,7 @@ export default function En() {
         heading={en.hero.heroHeading}
         ctaText={en.hero.heroCTA}
         subtitle={en.hero.heroSubtitle}
+        ctaLink={en.url}
       />
       <CardCollection title={en.products.productsTitle}>
         {en.products.items.map((product, index) => (
