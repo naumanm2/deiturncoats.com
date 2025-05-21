@@ -2,17 +2,26 @@ import React from "react";
 
 import { cn } from "@/lib/utils";
 import Arrow from "@/app/assets/svg/arrow.svg";
+import Link from "next/link";
 
 type ctaOptions = {
   text: string;
   ghost?: boolean;
   primary?: boolean;
   disabled?: boolean;
+  url?: string;
 };
 
-export default function CTA({ text, ghost, primary, disabled }: ctaOptions) {
+export default function CTA({
+  text,
+  ghost,
+  primary,
+  disabled,
+  url,
+}: ctaOptions) {
   return (
-    <button
+    <Link
+      href={url!}
       className={cn(
         "px-3 py-1.5 rounded-full uppercase text-white -mx-0.5",
         ghost &&
@@ -29,6 +38,6 @@ export default function CTA({ text, ghost, primary, disabled }: ctaOptions) {
           <Arrow />
         </div>
       )}
-    </button>
+    </Link>
   );
 }

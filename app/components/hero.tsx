@@ -3,11 +3,12 @@ import CTA from "./cta";
 
 type heroOptions = {
   heading: string;
+  subtitle: string;
   ctaText?: string;
   ctaLink?: string;
 };
 
-export default function Hero({ heading, ctaText }: heroOptions) {
+export default function Hero({ heading, subtitle, ctaText, ctaLink }: heroOptions) {
   return (
     <>
       <div className="relative w-full aspect-[9/16] md:aspect-[2/1]">
@@ -19,8 +20,9 @@ export default function Hero({ heading, ctaText }: heroOptions) {
 
         {/* Content */}
         <div className="relative z-10 flex uppercase flex-col items-center justify-center text-white h-full">
-          <h1 className="tracking-tighter">{heading}</h1>
-          {ctaText && <CTA ghost={true} text={ctaText} />}
+          <h1 className="pb-0">{heading}</h1>
+          <strong className="pb-5">{subtitle}</strong>
+          {ctaText && <CTA ghost={true} text={ctaText} url="/"  />}
         </div>
       </div>
     </>

@@ -69,11 +69,13 @@ h1 {
 h2 {
   font-weight: 700;
   letter-spacing: -0.05em;
+  line-height:110%;
   font-size: clamp(2.49rem, 4.08vi + 1.47rem, 4.73rem);
 }
 h3 {
   font-weight: 700;
   letter-spacing: -0.05em;
+  line-height:110%;
   font-size: clamp(1.44rem, 1.02vi + 1.19rem, 2rem);
 }
 

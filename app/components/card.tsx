@@ -36,12 +36,12 @@ export default function Card({
         </div>
       )}
 
-      {eyebrow && <p className="text-disabled-color"></p>}
-      <h3 className="group-hover:opacity-80 ease-in-out transition-all duration-300">
+      {eyebrow && <p className="text-disabled-color capitalize py-2">{eyebrow}</p>}
+      <h3 className="pb-2 group-hover:opacity-80 ease-in-out transition-all duration-300">
         {title}
       </h3>
       <p>{description}</p>
-      <strong className="pt-1">{price}</strong>
+      <strong className="pt-2">{price}</strong>
     </Link>
   );
 }
