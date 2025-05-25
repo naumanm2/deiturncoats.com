@@ -9,7 +9,7 @@ type ctaOptions = {
   ghost?: boolean;
   primary?: boolean;
   disabled?: boolean;
-  url?: string;
+  url: string;
 };
 
 export default function CTA({

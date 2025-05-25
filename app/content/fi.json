@@ -1,17 +1,17 @@
 {
   "site": {
     "title": "DEI-kääntötakit",
-    "description": "Yhdenvertaisuus ei enää kuulu tyyliimme."
+    "description": "Yhdenvertaisuus ei enää kuulu tyyliimme"
   },
   "url": "https://vaestoliitto.fi",
   "hero": {
     "heroHeading": "DEI-kääntötakit",
-    "heroSubtitle": "Yhdenvertaisuus ei enää kuulu tyyliimme.",
+    "heroSubtitle": "Yhdenvertaisuus ei enää kuulu tyyliimme",
     "heroCTA": "Osta nyt"
   },
   "about": {
-    "heading": "About",
-    "paragraph": "About us lorem ipsum dolor sit amet"
+    "heading": "Mistä on kyse?",
+    "paragraph": "DEI-käänteistakit juhlistavat kaikkia suuryrityksiä, jotka käänsivät takkiaan työntekijöidensä yhdenvertaisuuden suhteen ja heittivät DEI-ohjelmansa (diversiteetti, tasa-arvo ja osallisuus) romukoppaan."
   },
   "products": {
     "productsTitle": "Tuotteet",
@@ -25,9 +25,11 @@
         "deiInImageAlt": "Dei In Image Alt Description",
         "deiOutImage": "/png/1-out.png",
         "deiOutImageAlt": "Dei Out Image Alt Description",
-        "deiInHeadline": "Kuulumisen kokemus",
+        "deiInHeadline": "Entinen missiomme",
+        "deiInSubtitle": "Kuulumisen kokemus",
         "deiInDescription": "Uskoimme, että monimuotoinen työyhteisö tuottaa parempia tuloksia liiketoiminnallemme ja yhteisöillemme. Tämä tarkoitti konkreettisia tekoja: pyrimme varmistamaan, että jokainen työntekijä koki tulevansa nähdyksi, kuulluksi ja arvostetuksi. Sitouduimme myös kaksinkertaistamaan etnisiä vähemmistöjä edustavien johtajiemme määrän vuoteen 2025 mennessä.",
-        "deiOutHeadline": "Eksklusiivisia kokemuksia",
+        "deiOutHeadline": "Uusi missiomme",
+        "deiOutSubtitle": "Eksklusiivisia kokemuksia",
         "deiOutDescription": "Uskomme, että valkoiset miehet tuottavat parempia tuloksia liiketoiminnallemme ja yhteisöillemme. Sitoutumisellamme muiden ryhmien ulossulkemiseen varmistamme, että jokainen valkoinen mies kokee tulevansa arvostetuksi. Peruimme kehitysohjelmamme, jolla aiemmin pyrititin kaksinkertaistamaan mustien johtajien määrän 2025 mennessä. Mitäpä sellaisilla?",
         "availableSizes": [
           "white male 44",
@@ -53,9 +55,11 @@
         "deiInImageAlt": "Dei In Image Alt Description",
         "deiOutImage": "/png/2-out.png",
         "deiOutImageAlt": "Dei Out Image Alt Description",
-        "deiInHeadline": "Yhteiset tarinat",
+        "deiInHeadline": "Entinen missiomme",
+        "deiInSubtitle": "Yhteiset tarinat",
         "deiInDescription": "Yhteiset tarinat -aloitteessamme sitouduimme tarinoihin, jotka heijastavat moninaisuutta. Kävimme läpi sisältöarkistomme tunnistaaksemme ennakkoluulojamme ja sitouduimme vahvistamaan ääniä, jotka edustavat yleisömme monimuotoisuutta. Tavoitteenamme oli herättää keskustelua ja varmistaa, että jokainen voi löytää merkitystä tarinoistamme.",
-        "deiOutHeadline": "Syrjivät tarinat",
+        "deiOutHeadline": "Uusi missiomme",
+        "deiOutSubtitle": "Syrjivät tarinat",
         "deiOutDescription": "Syrjivät tarinat -aloitteessamme sitoudumme kertomaan tarinoita, jotka puhuttelevat vain valkoista väestöä. Olemme unohtaneet aiemmat harha-askeleemme ja sitoudumme yhteiskunnassamme vahvistamaan harvojen ja valittujen ääntä. Tavoitteenamme on vaientaa keskustelu ja varmistaa, että tarinamme koskettavat vain osaa väestöstä myös jatkossa.",
         "availableSizes": [
           "white male 44",
@@ -81,9 +85,11 @@
         "deiInImageAlt": "Dei In Image Alt Description",
         "deiOutImage": "/png/3-out.png",
         "deiOutImageAlt": "Dei Out Image Alt Description",
-        "deiInHeadline": "Sitouduimme monimuotoisuuteen",
+        "deiInHeadline": "Entinen missiomme",
+        "deiInSubtitle": "Sitouduimme monimuotoisuuteen",
         "deiInDescription": "Olimme sitoutuneita rekrytoimaan ja rakentamaan henkilöstöä, joka edustaa palvelemiamme yhteisöjä. Vuonna 2020 asetimme tavoitteekseemme lisätä vuoteen 2025 mennessä johtomme etnistä monimutoisuutta 30 %:lla.",
-        "deiOutHeadline": "Sitoudumme palkkaamaan vain omiamme",
+        "deiOutHeadline": "Uusi missiomme",
+        "deiOutSubtitle": "Sitoudumme palkkaamaan vain omiamme",
         "deiOutDescription": "Haluamme rakentaa ja rekrytoida henkilöstöä, joka vastaa arvojamme, eli välinpitämättömyyttä etnistä monimuotoisuutta kohtaan. Vuonna 2025 peruutimme johdomme monimuotoisempaan edustukseen tähtäävän ohjelman yhdessä yössä. Emme enää jaksaneet välittää. ",
         "availableSizes": [
           "white male 44",

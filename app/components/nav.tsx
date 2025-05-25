@@ -1,48 +1,56 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import Logo from "@/app/assets/svg/logo-horizontal.svg";
 import GlobeIcon from "@/app/assets/svg/globe.svg";
 import ShoppingBasketIcon from "@/app/assets/svg/shopping-basket.svg";
-import Link from "next/link";
+
 import CTA from "./cta";
-import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-const LanguageOptions = ({
-  paths,
-  setLangOpen,
+const PRODUCT_SLUGS = ["disney", "amazon", "google"];
+
+type NavProps = {
+  footer?: boolean;
+  locale: "en" | "fi";
+};
+
+const LanguageSwitcher = ({
+  locale,
+  pathname,
+  onClose,
 }: {
-  paths: string;
-  setLangOpen: (open: boolean) => void;
+  locale: "en" | "fi";
+  pathname: string;
+  onClose: () => void;
 }) => {
-  const isFinnish = paths.startsWith("/fi");
-  const basePath = isFinnish ? paths.replace(/^\/fi/, "") || "/" : paths;
-  const fiPath = isFinnish ? paths : `/fi${paths === "/" ? "" : paths}`;
+  const otherLocale = locale === "en" ? "fi" : "en";
+
+  const localizedPath = pathname.replace(`/${locale}`, "") || "/";
+  const newPath = `/${otherLocale}${localizedPath}`;
 
   return (
     <div className="h-min overflow-visible">
-      <div className="flex shadow-md flex-col bg-white rounded-2xl border-[1px] border-[#00000005] font-normal">
+      <div className="flex flex-col bg-white rounded-2xl shadow-md border border-[#00000005] font-normal">
         <Link
-          href={basePath}
-          onClick={() => setLangOpen(false)}
+          href={`/${locale}${localizedPath}`}
+          onClick={onClose}
           className={cn(
-            "hover:bg-[#00000010] w-full p-4 pl-4 pr-16 rounded-t-2xl border-b-2 border-[#00000008] text-sm",
-            !isFinnish && "font-bold"
+            "hover:bg-[#00000010] w-full p-4 pr-16 text-sm border-b-2 border-[#00000008] rounded-t-2xl",
+            "font-bold"
           )}
         >
-          EN
+          {locale.toUpperCase()}
         </Link>
         <Link
-          href={fiPath}
-          onClick={() => setLangOpen(false)}
-          className={cn(
-            "hover:bg-[#00000010] w-full p-4 pl-4 pr-16 rounded-b-2xl text-sm",
-            isFinnish && "font-bold"
-          )}
+          href={newPath}
+          onClick={onClose}
+          className="hover:bg-[#00000010] w-full p-4 pr-16 text-sm rounded-b-2xl"
         >
-          FI
+          {otherLocale.toUpperCase()}
         </Link>
       </div>
     </div>
@@ -50,115 +58,100 @@ const LanguageOptions = ({
 };
 
 const ShoppingBasket = ({
-  language,
-  handleClick,
+  locale,
+  onClose,
 }: {
-  language: string;
-  handleClick: React.MouseEventHandler;
+  locale: "en" | "fi";
+  onClose: () => void;
 }) => {
-  const randomNumber = Math.floor(Math.random() * 3) + 1;
-  const fi = language === "fi";
-  const productSlugs = ["disney", "amazon", "google"];
+  const randomSlug = PRODUCT_SLUGS[Math.floor(Math.random() * PRODUCT_SLUGS.length)];
+  const isFinnish = locale === "fi";
+
   return (
-    <div
-      className="h-min w-0 overflow-visible flex flex-col items-end"
-      onClick={handleClick}
-    >
-      <div className="max-w-sm w-[94vw] flex flex-col gap-8 p-8 bg-white rounded-2xl border-[1px] border-[#00000005] font-bold shadow-md">
+    <div className="h-min w-0 overflow-visible flex flex-col items-end" onClick={onClose}>
+      <div className="max-w-sm w-[94vw] flex flex-col gap-8 p-8 bg-white rounded-2xl border border-[#00000005] font-bold shadow-md">
         <p>
-          {fi
+          {isFinnish
             ? "Ostoskorisi on tyhjä"
             : "Your shopping basket seems to be empty."}
         </p>
-        <Link
-          className="w-full [&>button]:w-full"
-          href={
-            fi
-              ? `/fi/${productSlugs[randomNumber-1]}`
-              : `/${productSlugs[randomNumber-1]}`
-          }
-        >
-          <CTA text={fi ? "Ostoksille" : "Get to Shopping"} primary />
-        </Link>
+        <div className="w-full">
+          <CTA
+            text={isFinnish ? "Ostoksille" : "Get to Shopping"}
+            primary
+            url={`/${locale}/${randomSlug}`}
+          />
+        </div>
       </div>
     </div>
   );
 };
 
-export default function Nav({ footer }: { footer?: boolean }) {
-  const paths = usePathname();
-
-  const [language, setLanguage] = useState("en");
+export default function Nav({ footer, locale }: NavProps) {
+  const pathname = usePathname();
   const [langOpen, setLangOpen] = useState(false);
   const [basketOpen, setBasketOpen] = useState(false);
 
-  useEffect(() => {
-    console.log("sliced path: ", paths.startsWith("/fi"));
-    if (paths.length > 0 && paths.startsWith("/fi")) {
-      setLanguage("fi");
-    }
-  }, [paths]);
-
-  const handleLangClick = () => {
+  const toggleLang = () => {
     setBasketOpen(false);
-    setLangOpen((prev) => !prev);
+    setLangOpen((open) => !open);
   };
 
-  const handleBasketClick = () => {
+  const toggleBasket = () => {
     setLangOpen(false);
-    setBasketOpen(!basketOpen);
+    setBasketOpen((open) => !open);
   };
 
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-row justify-between items- box-border max-w-screen-[1720px] h-16 md:h-24 p-4 md:p-8 w-full pb-0 md:pb-0 z-20 top-0">
+    <nav className="flex flex-col">
+      <div className="flex flex-row justify-between items-center max-w-screen-[1720px] h-16 md:h-24 p-4 md:p-8 w-full z-20 top-0">
         <Link
-          className="[&>svg]:md:h-12 [&>svg]:h-8 h-min self-center [&>svg]:w-auto text-left"
-          href={language == "fi" ? "/fi" : "/"}
+          href={`/${locale}`}
+          className="[&>svg]:md:h-12 [&>svg]:h-8 h-min [&>svg]:w-auto"
         >
           <Logo />
         </Link>
-        <div className="flex-1 flex flex-row">
-          <div className="flex flex-col flex-1 max-md:hidden"></div>
-          <div className="flex flex-row gap-0 md:gap-2 justify-end max-md:flex-1">
-            <div
-              className={cn(
-                "flex flex-col gap-2 items-end",
-                footer && "flex-col-reverse"
-              )}
-            >
-              <button
-                className="p-3 md:p-4 [&>svg]:h-16 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:bg-[#00000010] rounded-lg"
-                onClick={() => handleLangClick()}
-              >
-                <GlobeIcon />
-              </button>
-              {langOpen && (
-                <LanguageOptions paths={paths} setLangOpen={setLangOpen} />
-              )}
-            </div>
-            <div
-              className={cn(
-                "flex flex-col gap-2 items-end",
-                footer && "flex-col-reverse"
-              )}
-            >
-              <button
-                className="p-3 md:p-4 [&>svg]:h-16 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:bg-[#00000010] rounded-lg"
-                onClick={handleBasketClick}
-              >
-                <ShoppingBasketIcon />
-              </button>
-              {basketOpen && (
-                <ShoppingBasket
-                  language={language}
-                  handleClick={() => setBasketOpen(false)}
-                />
-              )}
-            </div>
-          </div>
-        </div>
+<div className="flex flex-1 justify-end gap-2">
+  {/* Language Toggle */}
+  <div className={cn("relative flex flex-col items-end", footer && "flex-col-reverse")}>
+    <button
+      className="p-3 md:p-4 [&>svg]:h-16 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:bg-[#00000010] rounded-lg"
+      onClick={toggleLang}
+      aria-label="Toggle language"
+    >
+      <GlobeIcon />
+    </button>
+    {langOpen && (
+      <div className="absolute top-full mt-2 right-0 z-30">
+        <LanguageSwitcher
+          locale={locale}
+          pathname={pathname}
+          onClose={() => setLangOpen(false)}
+        />
       </div>
-    </div>
+    )}
+  </div>
+
+  {/* Basket Toggle */}
+  <div className={cn("relative flex flex-col items-end", footer && "flex-col-reverse")}>
+    <button
+      className="p-3 md:p-4 [&>svg]:h-16 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:bg-[#00000010] rounded-lg"
+      onClick={toggleBasket}
+      aria-label="Toggle shopping basket"
+    >
+      <ShoppingBasketIcon />
+    </button>
+    {basketOpen && (
+      <div className="absolute top-full mt-2 right-0 z-30">
+        <ShoppingBasket
+          locale={locale}
+          onClose={() => setBasketOpen(false)}
+        />
+      </div>
+    )}
+  </div>
+</div>
+      </div>
+    </nav>
   );
 }
