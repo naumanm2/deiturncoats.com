@@ -5,7 +5,7 @@ type heroOptions = {
   heading: string;
   subtitle: string;
   ctaText?: string;
-  ctaLink?: string;
+  ctaLink: string;
 };
 
 export default function Hero({ heading, subtitle, ctaText, ctaLink }: heroOptions) {

@@ -1,11 +1,17 @@
 import React from "react";
 import Nav from "./nav";
+import { Page } from "@/config";
 
-export default function Footer({ locale }: { locale: "en" | "fi" }) {
-	console.log(locale);
-	return (
-		<footer className="pb-48">
-			<Nav locale={locale} />
-		</footer>
-	);
+export default function Footer({
+  locale,
+  page,
+}: {
+  locale: "en" | "fi" | undefined;
+  page: Page | string;
+}) {
+  return (
+    <footer className="pb-48">
+      <Nav locale={locale} page={page} />
+    </footer>
+  );
 }

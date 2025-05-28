@@ -21,7 +21,7 @@ export default function CTA({
 }: ctaOptions) {
   return (
     <Link
-      href={url!}
+      href={url}
       className={cn(
         "px-3 py-1.5 rounded-full text-center uppercase text-white -mx-0.5",
         ghost &&
