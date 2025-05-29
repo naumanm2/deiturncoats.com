@@ -74,7 +74,6 @@ export async function generateStaticParams() {
 	);
 
 	return contentImports.flatMap((content, index) => {
-		console.log(content);
 		return content.products.items.map((product: { id: string }) => ({
 			locale: locales[index],
 			id: product.id,
