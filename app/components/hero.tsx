@@ -8,7 +8,12 @@ type heroOptions = {
   ctaLink?: string;
 };
 
-export default function Hero({ heading, subtitle, ctaText, ctaLink }: heroOptions) {
+export default function Hero({
+  heading,
+  subtitle,
+  ctaText,
+  ctaLink,
+}: heroOptions) {
   return (
     <>
       <div className="relative w-full aspect-[9/16] md:aspect-[2/1]">
@@ -22,7 +27,9 @@ export default function Hero({ heading, subtitle, ctaText, ctaLink }: heroOption
         <div className="relative z-10 flex uppercase flex-col items-center justify-center text-white h-full">
           <h1 className="pb-0">{heading}</h1>
           <strong className="pb-5">{subtitle}</strong>
-          {ctaText && <CTA ghost={true} text={ctaText} url={ctaLink}  />}
+          {ctaLink && ctaText && (
+            <CTA ghost={true} text={ctaText} url={ctaLink} />
+          )}
         </div>
       </div>
     </>

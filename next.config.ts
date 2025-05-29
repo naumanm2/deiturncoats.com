@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
   async rewrites() {
     return [
       {
@@ -11,8 +10,7 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  experimental: {
-    turbo: {
+    turbopack: {
       rules: {
         "*.svg": {
           loaders: ["@svgr/webpack"],
@@ -20,7 +18,6 @@ const nextConfig: NextConfig = {
         },
       },
     },
-  },
   webpack: (config) => {
     // Add rule for SVG files
     config.module.rules.push({
