@@ -10,19 +10,20 @@ export const metadata: Metadata = {
 	description: "Equality is so last season.",
 };
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
 	children,
 	params,
 }: {
 	children: React.ReactNode;
-	params: { locale: "en" | "fi" };
+	params: Promise<{ locale: "en" | "fi" }>;
 }) {
+	const { locale } = await params;
 	return (
-		<html lang={params.locale}>
+		<html lang={locale}>
 			<body className={`bg-background no-scrollbar antialiased`}>
-				<Nav locale={params.locale} />
+				<Nav locale={locale} />
 				<Container>{children}</Container>
-				<Footer locale={params.locale} />
+				<Footer locale={locale} />
 			</body>
 		</html>
 	);

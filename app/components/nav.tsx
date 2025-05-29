@@ -159,11 +159,7 @@ export default function Nav({ footer, locale }: NavProps) {
 					</div>
 					<div className="flex items-center">
 						{/* Language Toggle */}
-						<div
-							className={cn(
-								"relative flex flex-col",
-								footer && "flex-col-reverse"
-							)}>
+						<div className={cn("relative flex flex-col", footer && "flex-col-reverse")}>
 							<button
 								className="p-3 md:p-4 [&>svg]:h-16 w-12 h-12 md:w-16 md:h-16 flex items-center justify-center hover:bg-[#00000010] rounded-lg"
 								onClick={toggleLang}

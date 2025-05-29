@@ -5,7 +5,7 @@ import contentEn from "@/app/content/en.json";
 import contentFi from "@/app/content/fi.json";
 import ProductView from "./product-view";
 import CardCollection from "@/app/components/cardCollection";
-import Card from "@/app/components/card";
+import Card from "@/app/components/card/card";
 import Text from "@/app/components/text";
 
 const contentMap = {
@@ -16,11 +16,11 @@ const contentMap = {
 export default async function ProductPage({
 	params,
 }: {
-	params: { locale: "en" | "fi"; id: string };
+	params: Promise<{ locale: "en" | "fi"; id: string }>;
 }) {
-	const { locale } = params;
+	const { locale, id } = await params;
 	const content = contentMap[locale as "en" | "fi"];
-	const product = content.products.items.find((p) => p.id === params.id);
+	const product = content.products.items.find((p) => p.id === id);
 
 	if (!product) return notFound();
 
@@ -28,21 +28,23 @@ export default async function ProductPage({
 		<div>
 			<ProductView
 				id={product.id}
-        locale={locale}
+				locale={locale}
 				headline={product.title}
 				subtitle={product.subtitle}
 				price={product.price}
 				deiInHeadline={product.deiInHeadline}
-        deiInSubtitle={product.deiInSubtitle}
+				deiInSubtitle={product.deiInSubtitle}
 				deiOutHeadline={product.deiOutHeadline}
-        deiOutSubtitle={product.deiOutSubtitle}
+				deiOutSubtitle={product.deiOutSubtitle}
 				descriptionDeiIn={product.deiInDescription}
 				descriptionDeiOut={product.deiOutDescription}
 				availableSizes={product.availableSizes}
 				nonAvailableSizes={product.nonAvailableSizes}
-				deiInImageSrc={product.deiInImage}
+				deiInImage1Src={product.deiInImage1}
+				deiInImage2Src={product.deiInImage2}
 				deiInImageAlt={product.deiInImageAlt}
-				deiOutImageSrc={product.deiOutImage}
+				deiOutImage1Src={product.deiOutImage1}
+				deiOutImage2Src={product.deiOutImage2}
 				deiOutImageAlt={product.deiOutImageAlt}
 				url={content.url}
 			/>
@@ -50,11 +52,13 @@ export default async function ProductPage({
 				title={locale === "en" ? "Related products" : "Aiheeseen liittyvät tuotteet"}>
 				{content.products.items
 					.filter((p) => p.id != product.id)
-					.map((product, index) => (
+					.map((product) => (
 						<Card
-							key={index}
-							imagePath={product.deiInImage}
-							imageAlt={product.deiInImageAlt}
+							key={product.id}
+							image1src={product.deiOutImage1}
+							image2src={product.deiOutImage2}
+							image1alt={product.deiOutImageAlt}
+							image2alt={product.deiOutImageAlt}
 							title={product.title}
 							description={product.deiOutDescription}
 							price={product.price}

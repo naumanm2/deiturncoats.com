@@ -1,75 +1,79 @@
 import Hero from "@/app/components/hero";
 import CardCollection from "@/app/components/cardCollection";
-import Card from "@/app/components/card";
+import Card from "@/app/components/card/card";
 import Text from "@/app/components/text";
 
 // Dynamically import the correct locale JSON
 const getLocaleContent = async (locale: string): Promise<Content> => {
-  try {
-    return (await import(`@/app/content/${locale}.json`)) as Content;
-  } catch {
-    return (await import(`@/app/content/en.json`)) as Content;
-  }
+	try {
+		return (await import(`@/app/content/${locale}.json`)) as Content;
+	} catch {
+		return (await import(`@/app/content/en.json`)) as Content;
+	}
 };
 
 type ProductItem = {
-  id: string;
-  title: string;
-  price: string;
-  deiOutImage: string;
-  deiOutImageAlt: string;
-  deiOutDescription: string;
+	id: string;
+	title: string;
+	price: string;
+	deiOutImage1: string;
+	deiOutImage2: string;
+	deiOutImageAlt: string;
+	deiOutDescription: string;
+	deiInImage1: string;
+	deiInImage2: string;
+	deiInImageAlt: string;
+	deiInDescription: string;
 };
 
 type Content = {
-  site: { title: string; description: string };
-  url: string;
-  hero: { heroHeading: string; heroSubtitle: string; heroCTA: string };
-  about: { heading: string; paragraph: string };
-  products: {
-    productsTitle: string;
-    items: ProductItem[];
-  };
+	site: { title: string; description: string };
+	url: string;
+	hero: { heroHeading: string; heroSubtitle: string; heroCTA: string };
+	about: { heading: string; paragraph: string };
+	products: {
+		productsTitle: string;
+		items: ProductItem[];
+	};
 };
 
 export default async function LocalePage({
-  params,
+	params,
 }: {
-  params: { locale: string };
+	params: Promise<{ locale: string }>;
 }) {
-  const { locale } = params;
-  const content = await getLocaleContent(locale);
+	const { locale } = await params;
+	const content = await getLocaleContent(locale);
 
-  return (
-    <>
-      <Hero
-        heading={content.hero.heroHeading}
-        ctaText={content.hero.heroCTA}
-        subtitle={content.hero.heroSubtitle}
-        ctaLink={content.url}
-      />
-      <CardCollection title={content.products.productsTitle}>
-        {(content.products.items as ProductItem[]).map((product) => (
-          <Card
-            key={product.id}
-            imagePath={product.deiOutImage}
-            imageAlt={product.deiOutImageAlt}
-            title={product.title}
-            description={product.deiOutDescription}
-            price={product.price}
-            address={`/${locale}/${product.id}`}
-          />
-        ))}
-      </CardCollection>
-      <Text
-        heading={content.about.heading}
-        paragraph={content.about.paragraph}
-      />
-    </>
-  );
+	return (
+		<>
+			<Hero
+				heading={content.hero.heroHeading}
+				ctaText={content.hero.heroCTA}
+				subtitle={content.hero.heroSubtitle}
+				ctaLink={content.url}
+			/>
+			<CardCollection title={content.products.productsTitle}>
+				{(content.products.items as ProductItem[]).map((product) => (
+					<Card
+						key={product.id}
+						image1src={product.deiOutImage1}
+						image2src={product.deiOutImage2}
+						image1alt={product.deiOutImageAlt}
+						image2alt={product.deiOutImageAlt}
+						title={product.title}
+						description={product.deiOutDescription}
+						price={product.price}
+						address={`/${locale}/${product.id}`}
+					/>
+				))}
+			</CardCollection>
+			<Text heading={content.about.heading} paragraph={content.about.paragraph} />
+		</>
+	);
 }
 
 // in /app/[locale]/page.tsx
 export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "fi" }];
+	return [{ locale: "en" }, { locale: "fi" }];
 }
