@@ -15,11 +15,11 @@ type Content = {
 	about: { heading: string; paragraph: string };
 };
 
-export default async function LocalePage({ params }: { params: { locale: string } }) {
-	const { locale } = params;
-	const content = await getLocaleContent(locale);
-}
-
-export function generateStaticParams() {
-	return [{ locale: "en" }, { locale: "fi" }];
+export default async function LocalePage({
+	params,
+}: {
+	params: Promise<{ locale: string }>;
+}) {
+	const { locale } = await params;
+	<></>;
 }
