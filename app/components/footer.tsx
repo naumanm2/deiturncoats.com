@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./nav";
+import Nav from "./nav/nav";
 
 export default function Footer({ locale }: { locale: "en" | "fi" }) {
 	console.log(locale);

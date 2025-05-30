@@ -59,6 +59,7 @@ body {
 
 button {
   font-size: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
+  cursor: pointer;
 }
 
 h1 {
@@ -87,6 +88,10 @@ h4 {
 
 p {
   line-height: 110%;
+}
+
+span {
+  font-size:80%;
 }
 
 small {

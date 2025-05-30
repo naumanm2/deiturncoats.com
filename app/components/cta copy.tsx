@@ -23,20 +23,21 @@ export default function CTA({
     <Link
       href={url!}
       className={cn(
-        "px-3 py-1.5 rounded-lg bg-white/10 w-full flex flex-row items-center justify-between text-center uppercase text-white transition-color duration-300 ease-in-out -mx-1",
+        "px-5 py-1.5 rounded-full text-center uppercase text-white transition-color duration-300 ease-in-out -mx-1",
         ghost &&
-          "border-slate-100/40 border flex font-bold flex-row backdrop-blur-2xl hover:backdrop-blur-sm active:backdrop-blur-lg gap-2 items-center group",
+          "border-white border-[1px] flex flex-row gap-2 items-center hover:bg-white hover:text-black group ",
         primary &&
-          "bg-foreground font-bold py-2 border-[1px] hover:bg-brand-hover active:bg-brand-active",
+          "bg-brand font-bold py-2 border-[1px] border-brand-border hover:bg-brand-hover active:bg-brand-active",
         disabled &&
-          "bg-disabled-background py-2 text-disabled-color border-[1px] border-disabled-border hover:bg-disabled pointer-events-none"
+          "bg-disabled-background py-2 text-disabled-color border-[1px] border-disabled-border font-medium hover:bg-disabled pointer-events-none"
       )}
       aria-disabled={disabled}
       tabIndex={disabled ? -1 : undefined}
     >
+
       {text}
       {ghost && (
-        <div className="[&>svg]:h-3 [&>svg]:fill-white">
+        <div className="[&>svg]:h-3 [&>svg]:fill-white group-hover:[&>svg]:fill-black">
           <Arrow />
         </div>
       )}

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import Footer from "../components/footer";
 import Container from "../components/container";
-import Nav from "../components/nav";
+import Nav from "../components/nav/nav";
 
 export const metadata: Metadata = {
 	title: "DEI Turncoats",

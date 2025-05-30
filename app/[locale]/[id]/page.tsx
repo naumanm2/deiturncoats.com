@@ -7,6 +7,7 @@ import ProductView from "./product-view";
 import CardCollection from "@/app/components/cardCollection";
 import Card from "@/app/components/card/card";
 import Text from "@/app/components/text";
+import ProductViewTwo from "./product-view-2";
 
 const contentMap = {
 	en: contentEn,
@@ -26,7 +27,7 @@ export default async function ProductPage({
 
 	return (
 		<div>
-			<ProductView
+			<ProductViewTwo
 				id={product.id}
 				locale={locale}
 				headline={product.title}

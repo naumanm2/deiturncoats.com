@@ -24,12 +24,14 @@ export default function Hero({
         <div className="absolute inset-0 bg-black opacity-20 rounded-2xl" />
 
         {/* Content */}
-        <div className="relative z-10 flex uppercase flex-col items-center justify-center text-white h-full">
-          <h1 className="pb-0">{heading}</h1>
+        <div className="relative z-10 w-max m-auto px-12 flex uppercase flex-col items-center justify-center text-white h-full">
+          <h1 className="pb-4 text-center leading-none">{heading}</h1>
           <strong className="pb-5">{subtitle}</strong>
-          {ctaLink && ctaText && (
-            <CTA ghost={true} text={ctaText} url={ctaLink} />
-          )}
+          <div className="w-full max-w-96">
+            {ctaLink && ctaText && (
+              <CTA ghost={true} text={ctaText} url={ctaLink} />
+            )}
+          </div>
         </div>
       </div>
     </>
