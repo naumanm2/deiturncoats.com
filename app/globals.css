@@ -1,99 +1,99 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6f5f2;
-  --foreground: #171717;
-  --brand: #1b7f85;
-  --brand-border: #037077;
-  --brand-hover: #1d868b;
-  --brand-active: #03707796;
-  --disabled-background: #d3d3d3;
-  --disabled-border: #cfcfcf;
-  --disabled-color: #7f7f7f;
-  --unselected-background: white;
-  --unselected-background-hover: #ffffff90;
-  --unselected-color: #666666;
-  --unselected-border: #edf0f1;
-  --selected-background: #181919;
-  --selected-color: #ffffff;
-  --selected-border: #000000;
+	--background: #f6f5f2;
+	--foreground: #171717;
+	--brand: #1b7f85;
+	--brand-border: #037077;
+	--brand-hover: #1d868b;
+	--brand-active: #03707796;
+	--disabled-background: #d3d3d3;
+	--disabled-border: #cfcfcf;
+	--disabled-color: #7f7f7f;
+	--unselected-background: white;
+	--unselected-background-hover: #ffffff90;
+	--unselected-color: #666666;
+	--unselected-border: #edf0f1;
+	--selected-background: #181919;
+	--selected-color: #ffffff;
+	--selected-border: #000000;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-brand: var(--brand);
-  --color-brand-border: var(--brand-border);
-  --color-brand-hover: var(--brand-hover);
-  --color-brand-active: var(--brand-active);
-  --color-disabled-background: var(--disabled-background);
-  --color-disabled-border: var(--disabled-border);
-  --color-disabled-color: var(--disabled-color);
-  --color-unselected-background: var(--unselected-background);
-  --color-unselected-background-hover: var(--unselected-background-hover);
-  --color-unselected-border: var(--unselected-border);
-  --color-unselected-color: var(--unselected-color);
-  --color-selected-background: var(--selected-background);
-  --color-selected-border: var(--selected-border);
-  --color-selected-color: var(--selected-color);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-brand: var(--brand);
+	--color-brand-border: var(--brand-border);
+	--color-brand-hover: var(--brand-hover);
+	--color-brand-active: var(--brand-active);
+	--color-disabled-background: var(--disabled-background);
+	--color-disabled-border: var(--disabled-border);
+	--color-disabled-color: var(--disabled-color);
+	--color-unselected-background: var(--unselected-background);
+	--color-unselected-background-hover: var(--unselected-background-hover);
+	--color-unselected-border: var(--unselected-border);
+	--color-unselected-color: var(--unselected-color);
+	--color-selected-background: var(--selected-background);
+	--color-selected-border: var(--selected-border);
+	--color-selected-color: var(--selected-color);
 }
 
 @layer utilities {
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.no-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
 }
 
 button {
-  font-size: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
-  cursor: pointer;
+	font-size: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
+	cursor: pointer;
 }
 
 h1 {
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  font-size: clamp(2.49rem, 4.08vi + 1.47rem, 4.73rem);
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	font-size: clamp(2.49rem, 4.08vi + 1.47rem, 4.73rem);
 }
 h2 {
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  line-height:110%;
-  font-size: clamp(2.49rem, 4.08vi + 1.47rem, 4.73rem);
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	line-height: 110%;
+	font-size: clamp(2.49rem, 4.08vi + 1.47rem, 4.73rem);
 }
 h3 {
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  line-height:110%;
-  font-size: clamp(1.44rem, 1.02vi + 1.19rem, 2rem);
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	line-height: 110%;
+	font-size: clamp(1.44rem, 1.02vi + 1.19rem, 2rem);
 }
 
 h4 {
-  font-weight: 400;
-  letter-spacing: -0.05em;
-  font-size: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
+	font-weight: 400;
+	letter-spacing: -0.05em;
+	font-size: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
 }
 
 p {
-  line-height: 110%;
+	line-height: 110%;
 }
 
 span {
-  font-size:80%;
+	font-size: 80%;
 }
 
 small {
-  font-size:75%;
+	font-size: 75%;
 }
