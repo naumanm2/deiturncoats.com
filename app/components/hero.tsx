@@ -68,7 +68,7 @@ export default function Hero({
 	return (
 		<>
 			<div
-				className="relative w-full aspect-[9/16] md:aspect-[2/1] "
+				className="relative w-full aspect-[4/5] md:aspect-[2/1] "
 				onTouchStart={handleTouchStart}
 				onTouchEnd={handleTouchEnd}>
 				{/* Background image */}
