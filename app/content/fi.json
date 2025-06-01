@@ -8,7 +8,14 @@
 		"heroHeading": "DEI-kääntötakit",
 		"heroSubtitle": "Yhdenvertaisuus ei enää kuulu tyyliimme",
 		"heroCTA": "Osta nyt",
-		"images": ["/png/1-in.png", "/png/1-out.png"]
+		"images": {
+			"desktop": [
+				"/jpg/HERO_Amazon_16-9.jpg",
+				"/jpg/HERO_Disney_16-9.jpg",
+				"/jpg/HERO_Google_16-9.jpg"
+			],
+			"mobile": ["/jpg/HERO_Mobiili_Disney_2-3.jpg", "/jpg/HERO_Disney_16-9.jpg"]
+		}
 	},
 	"about": {
 		"heading": "Mistä on kyse?",

@@ -19,7 +19,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 			<Hero
 				heading={content.aboutPage.heading}
 				subtitle={content.aboutPage.subtitle}
-				images={[]}
+				images={content.hero.images}
 			/>
 			<Text
 				heading={content.aboutPage.headline}

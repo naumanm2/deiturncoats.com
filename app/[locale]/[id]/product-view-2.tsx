@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Pill from "@/app/components/pill";
 import CTA from "@/app/components/cta";
 import Arrow from "@/app/assets/svg/arrow.svg";
@@ -95,16 +95,16 @@ export default function ProductViewTwo({
 		}
 	};
 
+	useEffect(() => {
+		setDeiStatus(currentImageIndex < 2); // index 0 or 1 = deiIn, else deiOut
+	}, [currentImageIndex]);
+
 	const handlePrev = () => {
-		setCurrentImageIndex((prev) => (prev === 0 ? 4 - 1 : prev - 1));
-		console.log(currentImageIndex % 5);
-		setDeiStatus(!deiIn);
+		setCurrentImageIndex((prev) => (prev === 0 ? 3 : prev - 1));
 	};
 
 	const handleNext = () => {
-		setCurrentImageIndex((prev) => (prev === 4 - 1 ? 0 : prev + 1));
-		console.log(currentImageIndex % 5);
-		setDeiStatus(currentImageIndex + 1 > 2);
+		setCurrentImageIndex((prev) => (prev === 3 ? 0 : prev + 1));
 	};
 
 	const handleClick = (index: number) => {
@@ -122,26 +122,29 @@ export default function ProductViewTwo({
 					className="flex-1 relative h-full"
 					onTouchStart={handleTouchStart}
 					onTouchEnd={handleTouchEnd}>
-					{images[currentImageIndex]?.src ? (
-						<Image
-							className="aspect-[8/9] w-full rounded-2xl object-cover"
-							src={images[currentImageIndex].src!}
-							alt={images[currentImageIndex].alt || ""}
-							blurDataURL={Placeholder.src}
-							width={1080}
-							height={1350}
-							style={{ objectFit: "cover" }}
-							sizes="(max-width:768px) 50vw, 100vw"
-							priority
-							loading="eager"
-							placeholder="blur"
-						/>
-					) : (
-						<div className="aspect-[8/9] w-full rounded-2xl bg-zinc-300" />
-					)}
+					<div className="relative aspect-[8/9] w-full rounded-2xl overflow-hidden">
+						{images.map((image, index) =>
+							image?.src ? (
+								<Image
+									key={index}
+									src={image.src}
+									alt={image.alt || ""}
+									width={1080}
+									height={1350}
+									placeholder="blur"
+									blurDataURL={Placeholder.src}
+									sizes="(max-width:768px) 50vw, 100vw"
+									className={cn(
+										"absolute inset-0 w-full h-full object-cover",
+										index === currentImageIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+									)}
+								/>
+							) : null
+						)}
+					</div>
 
 					{/* Arrows */}
-					<div className="absolute bottom-1/2 translate-y-1/2 gap-2 p-2 w-full flex flex-row justify-between">
+					<div className="absolute bottom-1/2 z-20 translate-y-1/2 gap-2 p-2 w-full flex flex-row justify-between">
 						<button
 							onClick={handlePrev}
 							className=" rounded-full hover:backdrop-blur-2xl rotate-180 transition-all ease-in-out duration-300 backdrop-blur-xl w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center border-slate-500 border active:backdrop-blur-lg"
@@ -157,7 +160,7 @@ export default function ProductViewTwo({
 						</button>
 					</div>
 					{/* Index */}
-					<div className="absolute bottom-0 left-0 w-full text-center text-white font-bold p-4 ">
+					<div className="absolute bottom-0 left-0 z-20 w-full text-center text-white font-bold p-4 ">
 						<div className="">
 							<small>{currentImageIndex + 1}</small>
 							<small>/</small>
@@ -166,7 +169,7 @@ export default function ProductViewTwo({
 					</div>
 				</div>
 			) : (
-				<div className="flex-1 aspect-[8/9] w-full rounded-2xl bg-zinc-300"></div>
+				<div className="flex-1 aspect-[8/9] w-full rounded-2xl bg-[#88888a]"></div>
 			)}
 			<div className="flex-1 flex flex-col gap-4 md:gap-8">
 				<div className="flex flex-col gap-2 uppercase ">

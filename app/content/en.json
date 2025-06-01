@@ -8,7 +8,14 @@
 		"heroHeading": "DEI Turncoats",
 		"heroSubtitle": "Equality is so last season",
 		"heroCTA": "Buy now",
-		"images": ["/png/1-in.png", "/png/1-out.png"]
+		"images": {
+			"desktop": [
+				"/jpg/HERO_Amazon_16-9.jpg",
+				"/jpg/HERO_Disney_16-9.jpg",
+				"/jpg/HERO_Google_16-9.jpg"
+			],
+			"mobile": ["/jpg/HERO_Mobiili_Disney_2-3.jpg", "/jpg/HERO_Disney_16-9.jpg"]
+		}
 	},
 	"about": {
 		"heading": "About",
@@ -26,9 +33,9 @@
 			"Voit auttaa niin yksityisenä henkilönä kuin yrityksenäkin lahjoittamalla naisten ja tyttöjen, vammaisten henkilöiden ja sateenkaari-ihmisten yhdenvertaisuutta ja seksuaalioikeuksia puolustavaan työhön kehittyvissä maissa. Tukesi turvin yhä useampi voi elää, rakastaa, olla osallinen ja toteuttaa unelmiaan juuri sellaisena kuin on.",
 			"Yrityksille: jos haluatte yrityksenä olla laajemmin mukana puolustamassa yhdenvertaisuutta, tarjoamme myös laajempia mahdollisuuksia yhteistyölle (ks. yhteystiedot).]"
 		],
-    "ctaText":"Lahjoittamaan",
-    "ctaUrl":"https://vaestoliitto.fi",
-    "signature": "Lorem"
+		"ctaText": "Lahjoittamaan",
+		"ctaUrl": "https://vaestoliitto.fi",
+		"signature": "Lorem"
 	},
 	"products": {
 		"productsTitle": "Products",

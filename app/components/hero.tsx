@@ -4,11 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import CTA from "./cta";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { heroImages } from "../util/types";
 
 type heroOptions = {
 	heading: string;
 	subtitle: string;
-	images: string[];
+	images: heroImages;
 	ctaText?: string;
 	ctaLink?: string;
 	time?: number;
@@ -23,10 +24,26 @@ export default function Hero({
 	time = 5000,
 }: heroOptions) {
 	const [status, setStatus] = useState(0);
-	const length = images.length;
+	const length = images.desktop.length;
 
 	const touchStartX = useRef<number | null>(null);
 	const touchEndX = useRef<number | null>(null);
+
+	function useIsMobile(breakpoint = 768) {
+		const [isMobile, setIsMobile] = useState(false);
+
+		useEffect(() => {
+			const check = () => setIsMobile(window.innerWidth < breakpoint);
+			check();
+			window.addEventListener("resize", check);
+			return () => window.removeEventListener("resize", check);
+		}, [breakpoint]);
+
+		return isMobile;
+	}
+
+	const isMobile = useIsMobile(); // defaults to <768px
+	const imageSet = isMobile && images.mobile?.length ? images.mobile : images.desktop;
 
 	// Auto-play interval
 	useEffect(() => {
@@ -55,22 +72,23 @@ export default function Hero({
 				onTouchStart={handleTouchStart}
 				onTouchEnd={handleTouchEnd}>
 				{/* Background image */}
-				<div
-					className={`absolute inset-0 rounded-2xl overflow-hidden`}>
-					{images.map((image, index) => (
+				<div className={`absolute inset-0 rounded-2xl overflow-hidden`}>
+					{imageSet.map((image, index) => (
 						<Image
 							key={index}
 							src={image}
 							alt={"lorem"}
-							width={1080}
-							height={1920}
-							priority
-							style={{ objectFit: "cover" }}
+							width={isMobile ? 1080 : 1920}
+							height={!isMobile ? 1080 : 1920}
 							className={cn(
-								"absolute top-0 left-0 transition-opacity duration-200 ease-in-out",
+								"absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-300 ease-in-out",
 								index === status ? "opacity-100" : "delay-200 opacity-0"
 							)}
 							sizes="90vw"
+							placeholder="blur"
+							blurDataURL="/jpg/placeholder.png"
+							priority={index === 0}
+							loading={index === 0 ? "eager" : "lazy"}
 						/>
 					))}
 					{/* <Image
@@ -90,7 +108,7 @@ export default function Hero({
 				{/* Dots */}
 				<div className="absolute bottom-0 z-20 -translate-y-full left-1/2 -translate-x-1/2 ">
 					<div className="mt-6 flex justify-center gap-2 cursor-pointer">
-						{images.map((_, index) => (
+						{images.desktop.map((_, index) => (
 							<button
 								key={index}
 								onClick={() => setStatus(index)}

@@ -13,8 +13,6 @@ const getLocaleContent = async (locale: string): Promise<Content> => {
 	}
 };
 
-
-
 export default async function LocalePage({
 	params,
 }: {

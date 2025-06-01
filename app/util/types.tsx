@@ -12,10 +12,15 @@ export type ProductItem = {
 	deiInDescription: string;
 };
 
+export type heroImages = {
+	desktop: string[];
+	mobile: string[];
+};
+
 export type Content = {
 	site: { title: string; description: string };
 	url: string;
-	hero: { heroHeading: string; heroSubtitle: string; heroCTA: string; images: string[] };
+	hero: { heroHeading: string; heroSubtitle: string; heroCTA: string; images: heroImages };
 	about: { heading: string; paragraph: string; ctaUrl: string; ctaText: string };
 	aboutPage: {
 		heading: string;
