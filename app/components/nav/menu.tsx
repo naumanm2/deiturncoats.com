@@ -10,7 +10,7 @@ export const Menu = ({ open, setOpen, locale }: tMenu) => {
   return (
     <>
       {open && (
-        <div className="w-full flex-1 h-dvh fixed top-0 z-20 p-2 bg-background">
+        <div className="w-full flex-1 h-dvh fixed top-0 z-40 p-2 bg-background">
           <div className="flex flex-col h-full justify-end items-start gap-2 pb-32">
             <Link
               href={`/${locale}`}

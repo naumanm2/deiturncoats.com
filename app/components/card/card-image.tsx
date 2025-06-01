@@ -15,7 +15,7 @@ export default function CardImage({
 	alt2: string;
 }) {
 	return (
-		<div className="relative overflow-hidden aspect-[4/5] rounded-2xl mb-1 group">
+		<div className="relative overflow-hidden aspect-[4/5] z-0 rounded-2xl mb-1 group">
 			{/* Base image */}
 			<Image
 				className="rounded-2xl group-hover:opacity-0"
@@ -31,7 +31,7 @@ export default function CardImage({
 
 			{/* Hover image (on top, starts hidden) */}
 			<Image
-				className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100"
+				className="absolute inset-0 rounded-2xl opacity-0 z-0 group-hover:opacity-100"
 				src={src1}
 				alt={alt1}
 				width={1080}

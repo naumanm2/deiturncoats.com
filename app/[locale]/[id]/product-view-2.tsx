@@ -185,7 +185,7 @@ export default function ProductViewTwo({
 				</div>
 
 				<div className="[&_span]:text-[80%] [&_span]:font-bold pt-4">
-					<div className="relative w-full bg-stone-100 backdrop-blur-2xl rounded-lg mb-2">
+					<div className="relative w-full bg-stone-100 backdrop-blur-2xl z-30 rounded-lg mb-2">
 						<button
 							className="w-full rounded-lg flex justify-between items-center p-3 border-background transition-background hover:bg-stone-200 duration-200 ease-in-out cursor-pointer"
 							onClick={() => setMenuOpen(!menuOpen)}>
@@ -206,7 +206,7 @@ export default function ProductViewTwo({
 						</button>
 						<ul
 							className={cn(
-								"absolute top-12 left-0 hidden shadow-sm bg-stone-100 rounded-lg border-stone-200",
+								"absolute top-13 left-0 hidden shadow-sm bg-stone-100 rounded-lg border-stone-200",
 								menuOpen && "block rounded-lg w-full overflow-y-auto"
 							)}>
 							{availableSizes?.map((size, index) => (

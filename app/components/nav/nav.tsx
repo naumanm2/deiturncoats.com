@@ -43,12 +43,13 @@ export default function Nav({ footer, locale }: NavProps) {
 			<div
 				className={cn(
 					"flex flex-row justify-between items-center md:items-start max-w-screen-[1720px] h-16 md:h-24 p-4 md:p-8 w-full z-0 top-0",
-					footer ? "z-0" : "z-30"
+					footer ? "z-0" : "z-50"
 				)}>
 				<div className="flex-1">
 					<Link
 						href={`/${locale}`}
-						className="[&>svg]:md:h-12 [&>svg]:h-8 h-min [&>svg]:w-auto">
+						className="[&>svg]:md:h-12 [&>svg]:h-8 h-min [&>svg]:w-auto"
+						onClick={() => setMenuOpen(false)}>
 						<Logo />
 					</Link>
 				</div>
