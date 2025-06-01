@@ -80,7 +80,6 @@ export default function Nav({ footer, locale }: NavProps) {
 										locale={locale}
 										pathname={pathname}
 										visible={langOpen}
-                    setVisible={setLangOpen}
 										onClose={() => setLangOpen(false)}
 									/>
 								</div>
@@ -94,22 +93,26 @@ export default function Nav({ footer, locale }: NavProps) {
 								footer && "flex-col-reverse"
 							)}>
 							<button
-								className="transition-background duration-150 ease-in-out p-3 md:p-4 w-11 h-13 md:w-13 md:h-13 flex items-center justify-center hover:bg-[#00000008] rounded-lg cursor-pointer"
+								className="transition-background duration-150 ease-in-out [&>svg]:h-16 p-3 md:p-4 w-11 h-13 md:w-13 md:h-13 flex items-center justify-center hover:bg-[#00000008] rounded-lg cursor-pointer"
 								onClick={toggleBasket}
 								aria-label="Toggle shopping basket">
 								<ShoppingBasketIcon />
 							</button>
 							{basketOpen && (
 								<div className="absolute top-full mt-2 right-0 z-30">
-									<ShoppingBasket locale={locale} visible={basketOpen} onClose={() => setBasketOpen(false)} />
+									<ShoppingBasket
+										locale={locale}
+										visible={basketOpen}
+										onClose={() => setBasketOpen(false)}
+									/>
 								</div>
 							)}
 						</div>
 						{/* Menu */}
 						{!footer && (
-							<div className="">
+							<div className="transition-background duration-150 ease-in-out hover:bg-[#00000008] rounded-lg">
 								<button
-									className="p-4 h-full md:hidden"
+									className="p-4 px-4 -mx-2 h-full md:hidden"
 									onClick={() => setMenuOpen(!menuOpen)}>
 									{!menuOpen ? (
 										<>

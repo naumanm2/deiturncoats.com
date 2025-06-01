@@ -11,7 +11,7 @@ export default function Modal({
 	headline,
 	onClose,
 }: {
-	children: React.ReactNode;
+	children: React.ReactNode | ((props: { onClose: () => void }) => React.ReactNode);
 	visible: boolean;
 	headline?: string;
 	onClose: () => void;
@@ -111,7 +111,11 @@ export default function Modal({
 						</div>
 					</div>
 				</div>
-				{children}
+				{typeof children === "function"
+					? (children as (props: { onClose: () => void }) => React.ReactNode)({
+							onClose: handleClose,
+					  })
+					: children}
 			</div>
 		</div>
 	);
