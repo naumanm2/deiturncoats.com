@@ -67,7 +67,12 @@ export default async function ProductPage({
 						/>
 					))}
 			</CardCollection>
-			<Text heading={content.about.heading} paragraph={content.about.paragraph} />
+			<Text
+				heading={content.about.heading}
+				paragraph={content.about.paragraph}
+				ctaText={content.about.ctaText}
+				ctaUrl={content.about.ctaUrl}
+			/>
 		</div>
 	);
 }

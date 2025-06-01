@@ -1,4 +1,7 @@
 import React from "react";
+import Hero from "@/app/components/hero";
+import Text from "@/app/components/text";
+import { Content } from "@/app/util/types";
 
 const getLocaleContent = async (locale: string): Promise<Content> => {
 	try {
@@ -8,18 +11,26 @@ const getLocaleContent = async (locale: string): Promise<Content> => {
 	}
 };
 
-type Content = {
-	site: { title: string; description: string };
-	url: string;
-	hero: { heroHeading: string; heroSubtitle: string; heroCTA: string };
-	about: { heading: string; paragraph: string };
-};
-
-export default async function LocalePage({
-	params,
-}: {
-	params: Promise<{ locale: string }>;
-}) {
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
 	const { locale } = await params;
-	<></>;
+	const content = await getLocaleContent(locale);
+	return (
+		<>
+			<Hero
+				heading={content.aboutPage.heading}
+				subtitle={content.aboutPage.subtitle}
+				images={[]}
+			/>
+			<Text
+				heading={content.aboutPage.headline}
+				paragraph={content.aboutPage.paragraph}
+				ctaText={content.aboutPage.ctaText}
+				ctaUrl={content.aboutPage.ctaUrl}
+			/>
+		</>
+	);
+}
+
+export function generateStaticParams() {
+	return [{ locale: "en" }, { locale: "fi" }];
 }

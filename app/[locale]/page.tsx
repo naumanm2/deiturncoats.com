@@ -2,6 +2,7 @@ import Hero from "@/app/components/hero";
 import CardCollection from "@/app/components/cardCollection";
 import Card from "@/app/components/card/card";
 import Text from "@/app/components/text";
+import { Content, ProductItem } from "../util/types";
 
 // Dynamically import the correct locale JSON
 const getLocaleContent = async (locale: string): Promise<Content> => {
@@ -12,30 +13,7 @@ const getLocaleContent = async (locale: string): Promise<Content> => {
 	}
 };
 
-type ProductItem = {
-	id: string;
-	title: string;
-	price: string;
-	deiOutImage1: string;
-	deiOutImage2: string;
-	deiOutImageAlt: string;
-	deiOutDescription: string;
-	deiInImage1: string;
-	deiInImage2: string;
-	deiInImageAlt: string;
-	deiInDescription: string;
-};
 
-type Content = {
-	site: { title: string; description: string };
-	url: string;
-	hero: { heroHeading: string; heroSubtitle: string; heroCTA: string };
-	about: { heading: string; paragraph: string };
-	products: {
-		productsTitle: string;
-		items: ProductItem[];
-	};
-};
 
 export default async function LocalePage({
 	params,
@@ -52,6 +30,7 @@ export default async function LocalePage({
 				ctaText={content.hero.heroCTA}
 				subtitle={content.hero.heroSubtitle}
 				ctaLink={content.url}
+				images={content.hero.images}
 			/>
 			<CardCollection title={content.products.productsTitle}>
 				{(content.products.items as ProductItem[]).map((product) => (
@@ -68,7 +47,12 @@ export default async function LocalePage({
 					/>
 				))}
 			</CardCollection>
-			<Text heading={content.about.heading} paragraph={content.about.paragraph} />
+			<Text
+				heading={content.about.heading}
+				paragraph={content.about.paragraph}
+				ctaText={content.about.ctaText}
+				ctaUrl={content.about.ctaUrl}
+			/>
 		</>
 	);
 }

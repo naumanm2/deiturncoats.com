@@ -39,10 +39,10 @@ export default function Nav({ footer, locale }: NavProps) {
 	};
 
 	return (
-		<nav className="flex flex-col [&_button]:cursor-pointer">
+		<nav className="flex flex-col [&_button]:cursor-pointer navbar">
 			<div
 				className={cn(
-					"flex flex-row justify-between items-start max-w-screen-[1720px] h-16 md:h-24 p-4 md:p-8 w-full z-0 top-0",
+					"flex flex-row justify-between items-center md:items-start max-w-screen-[1720px] h-16 md:h-24 p-4 md:p-8 w-full z-0 top-0",
 					footer ? "z-0" : "z-30"
 				)}>
 				<div className="flex-1">
@@ -79,6 +79,8 @@ export default function Nav({ footer, locale }: NavProps) {
 									<LanguageSwitcher
 										locale={locale}
 										pathname={pathname}
+										visible={langOpen}
+                    setVisible={setLangOpen}
 										onClose={() => setLangOpen(false)}
 									/>
 								</div>
@@ -92,14 +94,14 @@ export default function Nav({ footer, locale }: NavProps) {
 								footer && "flex-col-reverse"
 							)}>
 							<button
-								className="transition-background duration-150 ease-in-out  p-3 md:p-4 [&>svg]:h-16 w-12 h-12 md:w-15 md:h-15 flex items-center justify-center hover:bg-[#00000008] rounded-lg cursor-pointer"
+								className="transition-background duration-150 ease-in-out p-3 md:p-4 w-11 h-13 md:w-13 md:h-13 flex items-center justify-center hover:bg-[#00000008] rounded-lg cursor-pointer"
 								onClick={toggleBasket}
 								aria-label="Toggle shopping basket">
 								<ShoppingBasketIcon />
 							</button>
 							{basketOpen && (
 								<div className="absolute top-full mt-2 right-0 z-30">
-									<ShoppingBasket locale={locale} onClose={() => setBasketOpen(false)} />
+									<ShoppingBasket locale={locale} visible={basketOpen} onClose={() => setBasketOpen(false)} />
 								</div>
 							)}
 						</div>
@@ -107,12 +109,12 @@ export default function Nav({ footer, locale }: NavProps) {
 						{!footer && (
 							<div className="">
 								<button
-									className="p-4 [&>svg]:h-5 md:hidden"
+									className="p-4 h-full md:hidden"
 									onClick={() => setMenuOpen(!menuOpen)}>
 									{!menuOpen ? (
 										<>
-											<div className="h-0.5 w-8 rounded-[0.4px] mb-1 bg-foreground"></div>
-											<div className="h-0.5 w-8 rounded-[0.4px] mb-1 bg-foreground"></div>
+											<div className="h-0.5 w-8 rounded-[0.4px] bg-foreground"></div>
+											<div className="h-0.5 w-8 rounded-[0.4px] mt-1 bg-foreground"></div>
 										</>
 									) : (
 										<>

@@ -97,3 +97,59 @@ span {
 small {
 	font-size: 75%;
 }
+
+@keyframes emerge {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes disappear {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.animate-emerge {
+	animation: emerge 0.2s ease-in-out forwards;
+}
+
+.animate-disappear {
+	animation: disappear 0.2s ease-in-out forwards;
+}
+
+@keyframes fade-up {
+	from {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+}
+
+@keyframes fade-down {
+	from {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+}
+
+.animate-fade-up {
+	animation: fade-up 0.2s 0s ease-in-out forwards;
+}
+
+.animate-fade-down {
+	animation: fade-down 0.2s 0s ease-in-out forwards;
+}

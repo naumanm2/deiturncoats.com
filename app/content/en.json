@@ -1,124 +1,141 @@
 {
-  "site": {
-    "title": "DEI Turncoats",
-    "description": "Equality is so last season"
-  },
-  "url": "https://vaestoliitto.fi",
-  "hero": {
-    "heroHeading": "DEI Turncoats",
-    "heroSubtitle": "Equality is so last season",
-    "heroCTA": "Buy now"
-  },
-  "about": {
-    "heading": "About",
-    "paragraph": "DEI Turncoats celebrate all corporate turncoats who reversed their values overnight and scrapped their DEI (Diversity, Equity, and Inclusion) programs."
-  },
-  "products": {
-    "productsTitle": "Products",
-    "items": [
-      {
-        "id": "amazon",
-        "title": "Values returned coat",
-        "subtitle": "Diversity sent back to warehouse",
-        "price": "TBA €",
-        "deiInImage1": "/jpg/Amazon_IN_Edesta_Tuotekuva_4-5.jpg",
-        "deiInImage2": "/jpg/Amazon_IN_Takaa_Tuotekuva_4-5.jpg",
-        "deiInImageAlt": "'DEI IN' Bomber jacket black turncoat shot in studio.",
-        "deiOutImage1": "/jpg/Amazon_OUT_Edesta_Tuotekuva_4-5.jpg",
-        "deiOutImage2": "/jpg/Amazon_OUT_Takaa_Tuotekuva_4-5.jpg",
-        "deiOutImageAlt": "'DEI OUT' Bomber jacket black turncoat shot in studio.",
-        "deiInHeadline": "Our former mission",
-        "deiInSubtitle": "Experiences of belonging",
-        "deiInDescription": "We used to believe that diverse people create better outcomes for our business and our communities. Through our commitment to inclusion, we worked to make sure every employee feels seen, heard, and valued. We even launched development programs and pledged to double Black leadership representation by 2025.",
-        "deiOutHeadline": "Our new mission",
-        "deiOutSubtitle": "Exclusive Experiences",
-        "deiOutDescription": "We now believe that white men create better outcomes for our business and our communities. Through our commitment to exclusion, we have worked to make sure every white man feels seen, heard, and valued. We canceled the development program that had pledged to double black leadership representation by 2025 —who needs that anyway?",
-        "availableSizes": [
-          "white male 44",
-          "white male 46",
-          "white male 48",
-          "white male 50",
-          "white male 52"
-        ],
-        "nonAvailableSizes": [
-          "female 34",
-          "female 36",
-          "female 38",
-          "female 40",
-          "female 42"
-        ]
-      },
-      {
-        "id": "disney",
-        "title": "Happily never after bomber",
-        "subtitle": "End of DEI ",
-        "price": "TBA €",
-        "deiInImage1": "/jpg/Disney_IN_Edesta_Tuotekuva_4-5.jpg",
-        "deiInImage2": "/jpg/Disney_IN_Takaa_Tuotekuva_4-5.jpg",
-        "deiInImageAlt": "'DEI IN' Bomber jacket blue turncoat shot in studio.",
-        "deiOutImage1": "/jpg/Disney_OUT_Edesta_Tuotekuva_4-5.jpg",
-        "deiOutImage2": "/jpg/Disney_OUT_Takaa_Tuotekuva_4-5.jpg",
-        "deiOutImageAlt": "'DEI OUT' Bomber jacket blue turncoat shot in studio.",
-		"deiInHeadline": "Our old mission",
-        "deiInSubtitle": "Stories of Inclusion",
-        "deiInDescription": "In our Stories of Inclusion initiative, we were committed to inclusive storytelling. We reviewed our library content to be aware of past misrepresentations and pledged to amplify voices that reflect the diversity of our audience. Our objective was eto inspire dialogue and make sure every story we told mattered to everyone.",
-        "deiInImage": "/png/2-in.png",
-        "deiOutHeadline": "Our new mission",
-        "deiOutSubtitle": "Stories that no longer matter",
-        "deiOutDescription": "In our ‘Stories that no longer matter’ initiative, we are committed to our old ways of telling stories. We’ve turned a blind eye to our past and pledged to shun voices that reflect the diversity of our audience. Our objective is to prevent dialogue and ensure our stories only speak to white people.",
-        "availableSizes": [
-          "white male 44",
-          "white male 46",
-          "white male 48",
-          "white male 50",
-          "white male 52"
-        ],
-        "nonAvailableSizes": [
-          "female 34",
-          "female 36",
-          "female 38",
-          "female 40",
-          "female 42"
-        ]
-      },
-      {
-        "id": "google",
-        "title": "0 DEI found jacket",
-        "subtitle": "The values you searched cannot be found",
-        "price": "TBA €",
-        "deiInImage1": "/jpg/Google_IN_Edesta_Tuotekuva_4-5.jpg",
-        "deiInImage2": "/jpg/Google_IN_Takaa_Tuotekuva_4-5.jpg",
-        "deiInImageAlt": "'DEI IN' Bomber jacket white turncoat shot in studio.",
-        "deiOutImage1": "/jpg/Google_OUT_Edesta_Tuotekuva_4-5.jpg",
-        "deiOutImage2": "/jpg/Google_OUT_Takaa_Tuotekuva_4-5.jpg",
-        "deiOutImageAlt": "'DEI OUT' Bomber jacket white turncoat shot in studio.",
-        "deiInHeadline": "Our former mission",
-        "deiInSubtitle": "Our commitment to racial equity",
-        "deiInDescription": "We were committed to building a workforce that reflects the communities we serve. In 2020, we set our goal of increasing leadership representation of underrepresented groups in the U.S. by 30% by 2025. ",
-        "deiOutHeadline": "Our new mission",
-        "deiOutSubtitle": "Our commitment to only hire people like us",
-        "deiOutDescription": "We’re committed to building a workforce that reflect our current values — …which no longer includes any concern for equity. In 2025, we cancelled our program to increase leaderhip representation because we stopped caring.",
-        "availableSizes": [
-          "white male 44",
-          "white male 46",
-          "white male 48",
-          "white male 50",
-          "white male 52"
-        ],
-        "nonAvailableSizes": [
-          "female 34",
-          "female 36",
-          "female 38",
-          "female 40",
-          "female 42"
-        ]
-      },
-      {
-        "id": "ComingSoon",
-        "title": "Coming soon: more turncoats.",
-        "subtitle": "The DEI rollback tour continues.",
-        "price": "TBA €"
-      }
-    ]
-  }
+	"site": {
+		"title": "DEI Turncoats",
+		"description": "Equality is so last season"
+	},
+	"url": "https://vaestoliitto.fi",
+	"hero": {
+		"heroHeading": "DEI Turncoats",
+		"heroSubtitle": "Equality is so last season",
+		"heroCTA": "Buy now",
+		"images": ["/png/1-in.png", "/png/1-out.png"]
+	},
+	"about": {
+		"heading": "About",
+		"paragraph": "DEI Turncoats celebrate all corporate turncoats who reversed their values overnight and scrapped their DEI (Diversity, Equity, and Inclusion) programs.",
+		"ctaText": "Read more",
+		"ctaUrl": "/fi/about"
+	},
+	"aboutPage": {
+		"heading": "Tämä ei ole takkikauppa",
+		"subtitle": "Tämä on kannanotto yhdenvertaisuuden puolesta",
+		"headline": "Lorem",
+		"paragraph": [
+			"Aikana, jolloin yritysjätit maailmalla peruvat DEI-ohjelmiaan, me kannustamme Suomen yrityksiä ja kansalaisia puolustamaan yhdenvertaisuutta. Näissä asioissa emme voi kääntää takkiamme: DEI ei todellakaan ole out.",
+			"Väestöliitto tukee yhdenvertaisuuden toteutumista niin täällä kotimaassa kuin maailmallakin. Jokaisella on oikeus tulla nähdyksi, kuulluksi ja hyväksytyksi omana itsenään.",
+			"Voit auttaa niin yksityisenä henkilönä kuin yrityksenäkin lahjoittamalla naisten ja tyttöjen, vammaisten henkilöiden ja sateenkaari-ihmisten yhdenvertaisuutta ja seksuaalioikeuksia puolustavaan työhön kehittyvissä maissa. Tukesi turvin yhä useampi voi elää, rakastaa, olla osallinen ja toteuttaa unelmiaan juuri sellaisena kuin on.",
+			"Yrityksille: jos haluatte yrityksenä olla laajemmin mukana puolustamassa yhdenvertaisuutta, tarjoamme myös laajempia mahdollisuuksia yhteistyölle (ks. yhteystiedot).]"
+		],
+    "ctaText":"Lahjoittamaan",
+    "ctaUrl":"https://vaestoliitto.fi",
+    "signature": "Lorem"
+	},
+	"products": {
+		"productsTitle": "Products",
+		"items": [
+			{
+				"id": "amazon",
+				"title": "Values returned coat",
+				"subtitle": "Diversity sent back to warehouse",
+				"price": "TBA €",
+				"deiInImage1": "/jpg/Amazon_IN_Edesta_Tuotekuva_4-5.jpg",
+				"deiInImage2": "/jpg/Amazon_IN_Takaa_Tuotekuva_4-5.jpg",
+				"deiInImageAlt": "'DEI IN' Bomber jacket black turncoat shot in studio.",
+				"deiOutImage1": "/jpg/Amazon_OUT_Edesta_Tuotekuva_4-5.jpg",
+				"deiOutImage2": "/jpg/Amazon_OUT_Takaa_Tuotekuva_4-5.jpg",
+				"deiOutImageAlt": "'DEI OUT' Bomber jacket black turncoat shot in studio.",
+				"deiInHeadline": "Our former mission",
+				"deiInSubtitle": "Experiences of belonging",
+				"deiInDescription": "We used to believe that diverse people create better outcomes for our business and our communities. Through our commitment to inclusion, we worked to make sure every employee feels seen, heard, and valued. We even launched development programs and pledged to double Black leadership representation by 2025.",
+				"deiOutHeadline": "Our new mission",
+				"deiOutSubtitle": "Exclusive Experiences",
+				"deiOutDescription": "We now believe that white men create better outcomes for our business and our communities. Through our commitment to exclusion, we have worked to make sure every white man feels seen, heard, and valued. We canceled the development program that had pledged to double black leadership representation by 2025 —who needs that anyway?",
+				"availableSizes": [
+					"white male 44",
+					"white male 46",
+					"white male 48",
+					"white male 50",
+					"white male 52"
+				],
+				"nonAvailableSizes": [
+					"female 34",
+					"female 36",
+					"female 38",
+					"female 40",
+					"female 42"
+				]
+			},
+			{
+				"id": "disney",
+				"title": "Happily never after bomber",
+				"subtitle": "End of DEI ",
+				"price": "TBA €",
+				"deiInImage1": "/jpg/Disney_IN_Edesta_Tuotekuva_4-5.jpg",
+				"deiInImage2": "/jpg/Disney_IN_Takaa_Tuotekuva_4-5.jpg",
+				"deiInImageAlt": "'DEI IN' Bomber jacket blue turncoat shot in studio.",
+				"deiOutImage1": "/jpg/Disney_OUT_Edesta_Tuotekuva_4-5.jpg",
+				"deiOutImage2": "/jpg/Disney_OUT_Takaa_Tuotekuva_4-5.jpg",
+				"deiOutImageAlt": "'DEI OUT' Bomber jacket blue turncoat shot in studio.",
+				"deiInHeadline": "Our old mission",
+				"deiInSubtitle": "Stories of Inclusion",
+				"deiInDescription": "In our Stories of Inclusion initiative, we were committed to inclusive storytelling. We reviewed our library content to be aware of past misrepresentations and pledged to amplify voices that reflect the diversity of our audience. Our objective was eto inspire dialogue and make sure every story we told mattered to everyone.",
+				"deiInImage": "/png/2-in.png",
+				"deiOutHeadline": "Our new mission",
+				"deiOutSubtitle": "Stories that no longer matter",
+				"deiOutDescription": "In our ‘Stories that no longer matter’ initiative, we are committed to our old ways of telling stories. We’ve turned a blind eye to our past and pledged to shun voices that reflect the diversity of our audience. Our objective is to prevent dialogue and ensure our stories only speak to white people.",
+				"availableSizes": [
+					"white male 44",
+					"white male 46",
+					"white male 48",
+					"white male 50",
+					"white male 52"
+				],
+				"nonAvailableSizes": [
+					"female 34",
+					"female 36",
+					"female 38",
+					"female 40",
+					"female 42"
+				]
+			},
+			{
+				"id": "google",
+				"title": "0 DEI found jacket",
+				"subtitle": "The values you searched cannot be found",
+				"price": "TBA €",
+				"deiInImage1": "/jpg/Google_IN_Edesta_Tuotekuva_4-5.jpg",
+				"deiInImage2": "/jpg/Google_IN_Takaa_Tuotekuva_4-5.jpg",
+				"deiInImageAlt": "'DEI IN' Bomber jacket white turncoat shot in studio.",
+				"deiOutImage1": "/jpg/Google_OUT_Edesta_Tuotekuva_4-5.jpg",
+				"deiOutImage2": "/jpg/Google_OUT_Takaa_Tuotekuva_4-5.jpg",
+				"deiOutImageAlt": "'DEI OUT' Bomber jacket white turncoat shot in studio.",
+				"deiInHeadline": "Our former mission",
+				"deiInSubtitle": "Our commitment to racial equity",
+				"deiInDescription": "We were committed to building a workforce that reflects the communities we serve. In 2020, we set our goal of increasing leadership representation of underrepresented groups in the U.S. by 30% by 2025. ",
+				"deiOutHeadline": "Our new mission",
+				"deiOutSubtitle": "Our commitment to only hire people like us",
+				"deiOutDescription": "We’re committed to building a workforce that reflect our current values — …which no longer includes any concern for equity. In 2025, we cancelled our program to increase leaderhip representation because we stopped caring.",
+				"availableSizes": [
+					"white male 44",
+					"white male 46",
+					"white male 48",
+					"white male 50",
+					"white male 52"
+				],
+				"nonAvailableSizes": [
+					"female 34",
+					"female 36",
+					"female 38",
+					"female 40",
+					"female 42"
+				]
+			},
+			{
+				"id": "ComingSoon",
+				"title": "Coming soon: more turncoats.",
+				"subtitle": "The DEI rollback tour continues.",
+				"price": "TBA €"
+			}
+		]
+	}
 }

@@ -1,123 +1,140 @@
 {
-  "site": {
-    "title": "DEI-kääntötakit",
-    "description": "Yhdenvertaisuus ei enää kuulu tyyliimme"
-  },
-  "url": "https://vaestoliitto.fi",
-  "hero": {
-    "heroHeading": "DEI-kääntötakit",
-    "heroSubtitle": "Yhdenvertaisuus ei enää kuulu tyyliimme",
-    "heroCTA": "Osta nyt"
-  },
-  "about": {
-    "heading": "Mistä on kyse?",
-    "paragraph": "DEI-käänteistakit juhlistavat kaikkia suuryrityksiä, jotka käänsivät takkiaan työntekijöidensä yhdenvertaisuuden suhteen ja heittivät DEI-ohjelmansa (diversiteetti, tasa-arvo ja osallisuus) romukoppaan."
-  },
-  "products": {
-    "productsTitle": "Tuotteet",
-    "items": [
-      {
-        "id": "amazon",
-        "title": "Values returned coat ",
-        "subtitle": "Diversity sent back to warehouse",
-        "price": "TBA €",
-        "deiInImage1": "/jpg/Amazon_IN_Edesta_Tuotekuva_4-5.jpg",
-        "deiInImage2": "/jpg/Amazon_IN_Takaa_Tuotekuva_4-5.jpg",
-        "deiInImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
-        "deiOutImage1": "/jpg/Amazon_OUT_Edesta_Tuotekuva_4-5.jpg",
-        "deiOutImage2": "/jpg/Amazon_OUT_Takaa_Tuotekuva_4-5.jpg",
-        "deiOutImageAlt": "'DEI OUT' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
-        "deiInHeadline": "Entinen missiomme",
-        "deiInSubtitle": "Kuulumisen kokemus",
-        "deiInDescription": "Uskoimme, että monimuotoinen työyhteisö tuottaa parempia tuloksia liiketoiminnallemme ja yhteisöillemme. Tämä tarkoitti konkreettisia tekoja: pyrimme varmistamaan, että jokainen työntekijä koki tulevansa nähdyksi, kuulluksi ja arvostetuksi. Sitouduimme myös kaksinkertaistamaan etnisiä vähemmistöjä edustavien johtajiemme määrän vuoteen 2025 mennessä.",
-        "deiOutHeadline": "Uusi missiomme",
-        "deiOutSubtitle": "Eksklusiivisia kokemuksia",
-        "deiOutDescription": "Uskomme, että valkoiset miehet tuottavat parempia tuloksia liiketoiminnallemme ja yhteisöillemme. Sitoutumisellamme muiden ryhmien ulossulkemiseen varmistamme, että jokainen valkoinen mies kokee tulevansa arvostetuksi. Peruimme kehitysohjelmamme, jolla aiemmin pyrititin kaksinkertaistamaan mustien johtajien määrän 2025 mennessä. Mitäpä sellaisilla?",
-        "availableSizes": [
-          "white male 44",
-          "white male 46",
-          "white male 48",
-          "white male 50",
-          "white male 52"
-        ],
-        "nonAvailableSizes": [
-          "female 34",
-          "female 36",
-          "female 38",
-          "female 40",
-          "female 42"
-        ]
-      },
-      {
-        "id": "disney",
-        "title": "Happily never after bomber",
-        "subtitle": "End of DEI ",
-        "price": "TBA €",
-        "deiInImage1": "/jpg/Disney_IN_Edesta_Tuotekuva_4-5.jpg",
-        "deiInImage2": "/jpg/Disney_IN_Takaa_Tuotekuva_4-5.jpg",
-        "deiInImageAlt": "'DEI IN' Sininen bomber -tyylinen takki kuvattuna mallin päällä.",
-        "deiOutImage1": "/jpg/Disney_OUT_Edesta_Tuotekuva_4-5.jpg",
-        "deiOutImage2": "/jpg/Disney_OUT_Takaa_Tuotekuva_4-5.jpg",
-        "deiOutImageAlt": "'DEI OUT' Sininen bomber -tyylinen takki kuvattuna mallin päällä.",
-        "deiInHeadline": "Entinen missiomme",
-        "deiInSubtitle": "Yhteiset tarinat",
-        "deiInDescription": "Yhteiset tarinat -aloitteessamme sitouduimme tarinoihin, jotka heijastavat moninaisuutta. Kävimme läpi sisältöarkistomme tunnistaaksemme ennakkoluulojamme ja sitouduimme vahvistamaan ääniä, jotka edustavat yleisömme monimuotoisuutta. Tavoitteenamme oli herättää keskustelua ja varmistaa, että jokainen voi löytää merkitystä tarinoistamme.",
-        "deiOutHeadline": "Uusi missiomme",
-        "deiOutSubtitle": "Syrjivät tarinat",
-        "deiOutDescription": "Syrjivät tarinat -aloitteessamme sitoudumme kertomaan tarinoita, jotka puhuttelevat vain valkoista väestöä. Olemme unohtaneet aiemmat harha-askeleemme ja sitoudumme yhteiskunnassamme vahvistamaan harvojen ja valittujen ääntä. Tavoitteenamme on vaientaa keskustelu ja varmistaa, että tarinamme koskettavat vain osaa väestöstä myös jatkossa.",
-        "availableSizes": [
-          "white male 44",
-          "white male 46",
-          "white male 48",
-          "white male 50",
-          "white male 52"
-        ],
-        "nonAvailableSizes": [
-          "female 34",
-          "female 36",
-          "female 38",
-          "female 40",
-          "female 42"
-        ]
-      },
-      {
-        "id": "google",
-        "title": "0 DEI found jacket",
-        "subtitle": "The values you searched cannot be found",
-        "price": "TBA €",
-        "deiInImage1": "/jpg/Google_IN_Edesta_Tuotekuva_4-5.jpg",
-        "deiInImage2": "/jpg/Google_IN_Takaa_Tuotekuva_4-5.jpg",
-        "deiInImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
-        "deiOutImage1": "/jpg/Google_OUT_Edesta_Tuotekuva_4-5.jpg",
-        "deiOutImage2": "/jpg/Google_OUT_Takaa_Tuotekuva_4-5.jpg",
-        "deiOutImageAlt": "'DEI OUT' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
-        "deiInHeadline": "Entinen missiomme",
-        "deiInSubtitle": "Sitouduimme monimuotoisuuteen",
-        "deiInDescription": "Olimme sitoutuneita rekrytoimaan ja rakentamaan henkilöstöä, joka edustaa palvelemiamme yhteisöjä. Vuonna 2020 asetimme tavoitteekseemme lisätä vuoteen 2025 mennessä johtomme etnistä monimutoisuutta 30 %:lla.",
-        "deiOutHeadline": "Uusi missiomme",
-        "deiOutSubtitle": "Sitoudumme palkkaamaan vain omiamme",
-        "deiOutDescription": "Haluamme rakentaa ja rekrytoida henkilöstöä, joka vastaa arvojamme, eli välinpitämättömyyttä etnistä monimuotoisuutta kohtaan. Vuonna 2025 peruutimme johdomme monimuotoisempaan edustukseen tähtäävän ohjelman yhdessä yössä. Emme enää jaksaneet välittää. ",
-        "availableSizes": [
-          "white male 44",
-          "white male 46",
-          "white male 48",
-          "white male 50",
-          "white male 52"
-        ],
-        "nonAvailableSizes": [
-          "female 34",
-          "female 36",
-          "female 38",
-          "female 40",
-          "female 42"
-        ]
-      },
-      {
-        "id": "ComingSoon",
-        "title": "Coming soon: more turncoats.",
-        "subtitle": "The DEI rollback tour continues.",
-        "price": "TBA €"
-      }
-    ]
-  }
+	"site": {
+		"title": "DEI-kääntötakit",
+		"description": "Yhdenvertaisuus ei enää kuulu tyyliimme"
+	},
+	"url": "https://vaestoliitto.fi",
+	"hero": {
+		"heroHeading": "DEI-kääntötakit",
+		"heroSubtitle": "Yhdenvertaisuus ei enää kuulu tyyliimme",
+		"heroCTA": "Osta nyt",
+		"images": ["/png/1-in.png", "/png/1-out.png"]
+	},
+	"about": {
+		"heading": "Mistä on kyse?",
+		"paragraph": "DEI-käänteistakit juhlistavat kaikkia suuryrityksiä, jotka käänsivät takkiaan työntekijöidensä yhdenvertaisuuden suhteen ja heittivät DEI-ohjelmansa (diversiteetti, tasa-arvo ja osallisuus) romukoppaan.",
+		"ctaText": "Lue lisää",
+		"ctaUrl": "/fi/about"
+	},
+	"aboutPage": {
+		"heading": "Tämä ei ole takkikauppa",
+		"subtitle": "Tämä on kannanotto yhdenvertaisuuden puolesta",
+		"headline": "Lorem",
+		"paragraph": [
+			"Aikana, jolloin yritysjätit maailmalla peruvat DEI-ohjelmiaan, me kannustamme Suomen yrityksiä ja kansalaisia puolustamaan yhdenvertaisuutta. Näissä asioissa emme voi kääntää takkiamme: DEI ei todellakaan ole out.",
+			"Väestöliitto tukee yhdenvertaisuuden toteutumista niin täällä kotimaassa kuin maailmallakin. Jokaisella on oikeus tulla nähdyksi, kuulluksi ja hyväksytyksi omana itsenään.",
+			"Voit auttaa niin yksityisenä henkilönä kuin yrityksenäkin lahjoittamalla naisten ja tyttöjen, vammaisten henkilöiden ja sateenkaari-ihmisten yhdenvertaisuutta ja seksuaalioikeuksia puolustavaan työhön kehittyvissä maissa. Tukesi turvin yhä useampi voi elää, rakastaa, olla osallinen ja toteuttaa unelmiaan juuri sellaisena kuin on.",
+			"Yrityksille: jos haluatte yrityksenä olla laajemmin mukana puolustamassa yhdenvertaisuutta, tarjoamme myös laajempia mahdollisuuksia yhteistyölle (ks. yhteystiedot).]"
+		],
+		"ctaText": "Lahjoittamaan",
+		"ctaUrl": "https://vaestoliitto.fi",
+		"signature": "Lorem"
+	},
+	"products": {
+		"productsTitle": "Tuotteet",
+		"items": [
+			{
+				"id": "amazon",
+				"title": "Values returned coat ",
+				"subtitle": "Diversity sent back to warehouse",
+				"price": "TBA €",
+				"deiInImage1": "/jpg/Amazon_IN_Edesta_Tuotekuva_4-5.jpg",
+				"deiInImage2": "/jpg/Amazon_IN_Takaa_Tuotekuva_4-5.jpg",
+				"deiInImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
+				"deiOutImage1": "/jpg/Amazon_OUT_Edesta_Tuotekuva_4-5.jpg",
+				"deiOutImage2": "/jpg/Amazon_OUT_Takaa_Tuotekuva_4-5.jpg",
+				"deiOutImageAlt": "'DEI OUT' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
+				"deiInHeadline": "Entinen missiomme",
+				"deiInSubtitle": "Kuulumisen kokemus",
+				"deiInDescription": "Uskoimme, että monimuotoinen työyhteisö tuottaa parempia tuloksia liiketoiminnallemme ja yhteisöillemme. Tämä tarkoitti konkreettisia tekoja: pyrimme varmistamaan, että jokainen työntekijä koki tulevansa nähdyksi, kuulluksi ja arvostetuksi. Sitouduimme myös kaksinkertaistamaan etnisiä vähemmistöjä edustavien johtajiemme määrän vuoteen 2025 mennessä.",
+				"deiOutHeadline": "Uusi missiomme",
+				"deiOutSubtitle": "Eksklusiivisia kokemuksia",
+				"deiOutDescription": "Uskomme, että valkoiset miehet tuottavat parempia tuloksia liiketoiminnallemme ja yhteisöillemme. Sitoutumisellamme muiden ryhmien ulossulkemiseen varmistamme, että jokainen valkoinen mies kokee tulevansa arvostetuksi. Peruimme kehitysohjelmamme, jolla aiemmin pyrititin kaksinkertaistamaan mustien johtajien määrän 2025 mennessä. Mitäpä sellaisilla?",
+				"availableSizes": [
+					"white male 44",
+					"white male 46",
+					"white male 48",
+					"white male 50",
+					"white male 52"
+				],
+				"nonAvailableSizes": [
+					"female 34",
+					"female 36",
+					"female 38",
+					"female 40",
+					"female 42"
+				]
+			},
+			{
+				"id": "disney",
+				"title": "Happily never after bomber",
+				"subtitle": "End of DEI ",
+				"price": "TBA €",
+				"deiInImage1": "/jpg/Disney_IN_Edesta_Tuotekuva_4-5.jpg",
+				"deiInImage2": "/jpg/Disney_IN_Takaa_Tuotekuva_4-5.jpg",
+				"deiInImageAlt": "'DEI IN' Sininen bomber -tyylinen takki kuvattuna mallin päällä.",
+				"deiOutImage1": "/jpg/Disney_OUT_Edesta_Tuotekuva_4-5.jpg",
+				"deiOutImage2": "/jpg/Disney_OUT_Takaa_Tuotekuva_4-5.jpg",
+				"deiOutImageAlt": "'DEI OUT' Sininen bomber -tyylinen takki kuvattuna mallin päällä.",
+				"deiInHeadline": "Entinen missiomme",
+				"deiInSubtitle": "Yhteiset tarinat",
+				"deiInDescription": "Yhteiset tarinat -aloitteessamme sitouduimme tarinoihin, jotka heijastavat moninaisuutta. Kävimme läpi sisältöarkistomme tunnistaaksemme ennakkoluulojamme ja sitouduimme vahvistamaan ääniä, jotka edustavat yleisömme monimuotoisuutta. Tavoitteenamme oli herättää keskustelua ja varmistaa, että jokainen voi löytää merkitystä tarinoistamme.",
+				"deiOutHeadline": "Uusi missiomme",
+				"deiOutSubtitle": "Syrjivät tarinat",
+				"deiOutDescription": "Syrjivät tarinat -aloitteessamme sitoudumme kertomaan tarinoita, jotka puhuttelevat vain valkoista väestöä. Olemme unohtaneet aiemmat harha-askeleemme ja sitoudumme yhteiskunnassamme vahvistamaan harvojen ja valittujen ääntä. Tavoitteenamme on vaientaa keskustelu ja varmistaa, että tarinamme koskettavat vain osaa väestöstä myös jatkossa.",
+				"availableSizes": [
+					"white male 44",
+					"white male 46",
+					"white male 48",
+					"white male 50",
+					"white male 52"
+				],
+				"nonAvailableSizes": [
+					"female 34",
+					"female 36",
+					"female 38",
+					"female 40",
+					"female 42"
+				]
+			},
+			{
+				"id": "google",
+				"title": "0 DEI found jacket",
+				"subtitle": "The values you searched cannot be found",
+				"price": "TBA €",
+				"deiInImage1": "/jpg/Google_IN_Edesta_Tuotekuva_4-5.jpg",
+				"deiInImage2": "/jpg/Google_IN_Takaa_Tuotekuva_4-5.jpg",
+				"deiInImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
+				"deiOutImage1": "/jpg/Google_OUT_Edesta_Tuotekuva_4-5.jpg",
+				"deiOutImage2": "/jpg/Google_OUT_Takaa_Tuotekuva_4-5.jpg",
+				"deiOutImageAlt": "'DEI OUT' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
+				"deiInHeadline": "Entinen missiomme",
+				"deiInSubtitle": "Sitouduimme monimuotoisuuteen",
+				"deiInDescription": "Olimme sitoutuneita rekrytoimaan ja rakentamaan henkilöstöä, joka edustaa palvelemiamme yhteisöjä. Vuonna 2020 asetimme tavoitteekseemme lisätä vuoteen 2025 mennessä johtomme etnistä monimutoisuutta 30 %:lla.",
+				"deiOutHeadline": "Uusi missiomme",
+				"deiOutSubtitle": "Sitoudumme palkkaamaan vain omiamme",
+				"deiOutDescription": "Haluamme rakentaa ja rekrytoida henkilöstöä, joka vastaa arvojamme, eli välinpitämättömyyttä etnistä monimuotoisuutta kohtaan. Vuonna 2025 peruutimme johdomme monimuotoisempaan edustukseen tähtäävän ohjelman yhdessä yössä. Emme enää jaksaneet välittää. ",
+				"availableSizes": [
+					"white male 44",
+					"white male 46",
+					"white male 48",
+					"white male 50",
+					"white male 52"
+				],
+				"nonAvailableSizes": [
+					"female 34",
+					"female 36",
+					"female 38",
+					"female 40",
+					"female 42"
+				]
+			},
+			{
+				"id": "ComingSoon",
+				"title": "Coming soon: more turncoats.",
+				"subtitle": "The DEI rollback tour continues.",
+				"price": "TBA €"
+			}
+		]
+	}
 }
