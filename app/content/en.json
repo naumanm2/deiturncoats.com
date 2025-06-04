@@ -44,7 +44,7 @@
     "paragraph": "Aikana, jona globaalit brändit peruvat DEI-ohjelmiaan, me kannustamme suomalaisia yrityksiä ja ihmisiä puolustamaan yhdenvertaisuutta. Näissä asioissa emme voi kääntää takkiamme: DEI ei todellakaan ole out. \n\n Väestöliitto puolustaa yhdenvertaisuutta Suomessa ja maailmalla. Voit auttaa yksityisenä henkilönä tai yrityksenä lahjoittamalla naisten ja tyttöjen, vammaisten henkilöiden ja sateenkaari-ihmisten yhdenvertaisuutta ja seksuaalioikeuksia puolustavaan työhömme kehittyvissä maissa. \n\n Tukesi turvin yhä useampi voi elää ja toteuttaa unelmiaan juuri sellaisena kuin on.\n\n Yrityksille: jos haluatte yrityksenä olla vahvemmin mukana puolustamassa yhdenvertaisuutta, tarjoamme myös laajempia mahdollisuuksia yhteistyölle (ks. yhteystiedot)",
     "ctaText": "Lahjoittamaan",
     "ctaUrl": "https://vaestoliitto.lahjoitanyt.fi/deiturncoats",
-    "signature": "Kiitämme huomiosta ja tuesta tälle tärkeälle asialle. Väestöliitto \n\n *Yhteystiedot*: [lahjoitukset@vaestoliitto.fi](mailto:lahjoitukset@vaestoliitto.fi) *Väestöliiton rahankeräyslupa*: RA/2020/1558"
+    "signature": "Kiitämme huomiosta ja tuesta tälle tärkeälle asialle. Väestöliitto \n\n *Yhteystiedot*: [lahjoitukset@vaestoliitto.fi](mailto:lahjoitukset@vaestoliitto.fi) \n\n *Väestöliiton rahankeräyslupa*: RA/2020/1558"
   },
   "products": {
     "productsTitle": "Products",
@@ -52,9 +52,9 @@
       {
         "id": "the-return-coat",
         "cardTitle": "The Return Coat",
-        "cardDescription": "This jacket used to represent belonging and the power of diversity to drive better outcomes for business and community. Not anymore.",
+        "cardDescription": "This black bomber jacket made the return from DEI champion to sellout faster than you can say 'inclusion'",
         "title": "The Return Coat",
-        "subtitle": "Diversity sent back to warehouse",
+        "subtitle": "This jacket used to offer experiences of belonging and diverse people creating better outcomes for business and community. Not anymore though.",
         "price": "Explore",
         "deiInImage1": "/jpg/Amazon_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Amazon_IN_Takaa_Tuotekuva_4-5.jpg",
@@ -125,7 +125,7 @@
         "cardTitle": "Values-Not-Found Jacket",
         "cardDescription": "This white bomber jacket shifts like the values it’s missing — DEI in, DEI out.",
         "title": "Values-Not-Found Jacket",
-        "subtitle": "This white bomber jacket shifts like the values it’s missing — DEI in, DEI out.",
+        "subtitle": "This jacket used to stand for racial equality and building a workforce that reflects the community it served. You can forget that now.",
         "price": "Explore",
         "deiInImage1": "/jpg/Google_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Google_IN_Takaa_Tuotekuva_4-5.jpg",
@@ -135,7 +135,7 @@
         "deiOutImageAlt": "'DEI OUT' Bomber jacket white turncoat shot in studio.",
         "deiInHeadline": " What our coat used to stand for",
         "deiInSubtitle": "What our coat used to stand for",
-        "deiInDescription": "This jacket used to stand for racial equality and building a workforce that reflects the community it served. You can forget that now. ",
+        "deiInDescription": "This jacket used to stand for racial equality and building a workforce that reflects the community it served. You can forget that now.",
         "deiOutHeadline": " What our coat used to stand for",
         "deiOutSubtitle": "What our coat used to stand for",
         "deiOutDescription": "This jacket used to stand for racial equality and building a workforce that reflects the community it served. You can forget that now. ",
