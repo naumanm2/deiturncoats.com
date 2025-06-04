@@ -8,7 +8,7 @@ type tCard = {
   image2src?: string;
   image2alt?: string;
   eyebrow?: string;
-  title: string;
+  title?: string;
   description?: string;
   price: string;
   address: string;

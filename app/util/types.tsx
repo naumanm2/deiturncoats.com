@@ -2,6 +2,8 @@ export type ProductItem = {
 	id: string;
 	title: string;
 	price: string;
+	cardTitle: string;
+	cardDescription: string;
 	deiOutImage1: string;
 	deiOutImage2: string;
 	deiOutImageAlt: string;
@@ -26,7 +28,7 @@ export type Content = {
 		heading: string;
 		subtitle: string;
 		headline: string;
-		paragraph: string[];
+		paragraph: string;
 		ctaText: string;
 		ctaUrl: string;
 		signature: string;
