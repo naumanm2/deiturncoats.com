@@ -28,6 +28,7 @@ export default async function Page({
       <Text
         heading={content.aboutPage.headline}
         paragraph={content.aboutPage.paragraph}
+		signature={content.aboutPage.signature}
         ctaText={content.aboutPage.ctaText}
         ctaUrl={content.aboutPage.ctaUrl}
       />

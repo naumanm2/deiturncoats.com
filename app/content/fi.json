@@ -15,9 +15,9 @@
         "/jpg/HERO_Google_16-9.jpg"
       ],
       "mobile": [
-        "/jpg/Mobiili_Hero_1",
-        "/jpg/Mobiili_Hero_2",
-        "/jpg/Mobiili_Hero_3"
+        "/jpg/Mobiili_Hero_1.jpg",
+        "/jpg/Mobiili_Hero_2.jpg",
+        "/jpg/Mobiili_Hero_3.jpg"
       ]
     }
   },
@@ -30,11 +30,11 @@
   "aboutPage": {
     "heading": "Tämä ei ole takkikauppa",
     "subtitle": "Tämä on kannanotto yhdenvertaisuuden puolesta",
-    "headline": "Lorem",
+    "headline": "Lyhyesti",
     "paragraph": "Aikana, jona globaalit brändit peruvat DEI-ohjelmiaan, me kannustamme suomalaisia yrityksiä ja ihmisiä puolustamaan yhdenvertaisuutta. Näissä asioissa emme voi kääntää takkiamme: DEI ei todellakaan ole out. \n\n Väestöliitto puolustaa yhdenvertaisuutta Suomessa ja maailmalla. Voit auttaa yksityisenä henkilönä tai yrityksenä lahjoittamalla naisten ja tyttöjen, vammaisten henkilöiden ja sateenkaari-ihmisten yhdenvertaisuutta ja seksuaalioikeuksia puolustavaan työhömme kehittyvissä maissa. \n\n Tukesi turvin yhä useampi voi elää ja toteuttaa unelmiaan juuri sellaisena kuin on.\n\n Yrityksille: jos haluatte yrityksenä olla vahvemmin mukana puolustamassa yhdenvertaisuutta, tarjoamme myös laajempia mahdollisuuksia yhteistyölle (ks. yhteystiedot)",
     "ctaText": "Lahjoittamaan",
     "ctaUrl": "https://vaestoliitto.lahjoitanyt.fi/deiturncoats",
-    "signature": "Kiitämme huomiosta ja tuesta tälle tärkeälle asialle. Väestöliitto \n\n *Yhteystiedot*: lahjoitukset@vaestoliitto.fi *Väestöliiton rahankeräyslupa*: RA/2020/1558"
+    "signature": "Kiitämme huomiosta ja tuesta tälle tärkeälle asialle. Väestöliitto \n\n *Yhteystiedot*: [lahjoitukset@vaestoliitto.fi](mailto:lahjoitukset@vaestoliitto.fi) *Väestöliiton rahankeräyslupa*: RA/2020/1558"
   },
   "products": {
     "productsTitle": "Tuotteet",
@@ -110,11 +110,11 @@
         "pagecta": "Lue lisää"
       },
       {
-        "id": "google",
-        "cardTitle": "The Return Coat",
-        "cardDescription": "Tämä takki lähetti arvonsa takaisin menneisyyteen nopeammin kuin ehdit sanoa “yhdenvertaisuus”.",
-        "title": "The Return Coat",
-        "subtitle": "The values you searched cannot be found",
+        "id": "values-not-found-jacket",
+        "cardTitle": "Values-Not-Found Jacket",
+        "cardDescription": "Tämä valkoinen kääntötakki unohti yhdenvertaisuuden ja suoritti haun uusille arvoille.",
+        "title": "Values-Not-Found Jacket",
+        "subtitle": "Tämä valkoinen kääntötakki unohti yhdenvertaisuuden ja suoritti haun uusille arvoille.",
         "price": "TBA €",
         "deiInImage1": "/jpg/Google_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Google_IN_Takaa_Tuotekuva_4-5.jpg",
@@ -150,7 +150,10 @@
         "cardDescription": "The DEI rollback tour continues.",
         "title": "Coming soon: more turncoats.",
         "subtitle": "The DEI rollback tour continues.",
-        "price": "TBA €"
+        "price": "TBA €",
+        "deiOutImage1": "/jpg/Coming_soon_Tuotekuva_4-5.jpg",
+        "deiOutImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
+        "pagecta": "Lue lisää"
       }
     ]
   }

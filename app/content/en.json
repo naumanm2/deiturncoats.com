@@ -15,9 +15,9 @@
         "/jpg/HERO_Google_16-9.jpg"
       ],
       "mobile": [
-        "/jpg/Mobiili_Hero_1",
-        "/jpg/Mobiili_Hero_2",
-        "/jpg/Mobiili_Hero_3"
+        "/jpg/Mobiili_Hero_1.jpg",
+        "/jpg/Mobiili_Hero_2.jpg",
+        "/jpg/Mobiili_Hero_3.jpg"
       ]
     }
   },
@@ -30,7 +30,7 @@
   "aboutPage": {
     "heading": "Tämä ei ole takkikauppa",
     "subtitle": "Tämä on kannanotto yhdenvertaisuuden puolesta",
-    "headline": "Lorem",
+    "headline": "Lyhyesti",
     "paragraph": "Aikana, jona globaalit brändit peruvat DEI-ohjelmiaan, me kannustamme suomalaisia yrityksiä ja ihmisiä puolustamaan yhdenvertaisuutta. Näissä asioissa emme voi kääntää takkiamme: DEI ei todellakaan ole out. \n\n Väestöliitto puolustaa yhdenvertaisuutta Suomessa ja maailmalla. Voit auttaa yksityisenä henkilönä tai yrityksenä lahjoittamalla naisten ja tyttöjen, vammaisten henkilöiden ja sateenkaari-ihmisten yhdenvertaisuutta ja seksuaalioikeuksia puolustavaan työhömme kehittyvissä maissa. \n\n Tukesi turvin yhä useampi voi elää ja toteuttaa unelmiaan juuri sellaisena kuin on.\n\n Yrityksille: jos haluatte yrityksenä olla vahvemmin mukana puolustamassa yhdenvertaisuutta, tarjoamme myös laajempia mahdollisuuksia yhteistyölle (ks. yhteystiedot)",
     "ctaText": "Lahjoittamaan",
     "ctaUrl": "https://vaestoliitto.lahjoitanyt.fi/deiturncoats",
@@ -75,10 +75,11 @@
         "pagecta": "Read more"
       },
       {
-        "id": "values-not-found Jacket",
-        "cardTitle": "Values-Not-Found Jacket",
-        "cardDescription": "This white bomber jacket shifts like the values it’s missing — DEI in, DEI out.",
-        "title": "Values-Not-Found Jacket",
+        "id": "magical-shift-jacket",
+        "cardTitle": "Magical Shift Jacket",
+        "cardDescription": "This blue bomber jacket captures how quickly you can flip your fit on DEI.",
+        "title": "Magical Shift Jacket",
+        "subtitle": "Our coat used to embrace inclusive storytelling, inspire dialogue and ensure we spoke to everyone. But that’s over now.",
         "price": "TBA €",
         "deiInImage1": "/jpg/Disney_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Disney_IN_Takaa_Tuotekuva_4-5.jpg",
@@ -110,11 +111,11 @@
         "pagecta": "Lue lisää"
       },
       {
-        "id": "google",
-        "cardTitle": "The Return Coat",
-        "cardDescription": "This black bomber jacket made the return from DEI champion to sellout faster than you can say “inclusion”.",
-        "title": "0 DEI found jacket",
-        "subtitle": "The values you searched cannot be found",
+        "id": "values-not-found-jacket",
+        "cardTitle": "Values-Not-Found Jacket",
+        "cardDescription": "This white bomber jacket shifts like the values it’s missing — DEI in, DEI out.",
+        "title": "Values-Not-Found Jacket",
+        "subtitle": "This white bomber jacket shifts like the values it’s missing — DEI in, DEI out.",
         "price": "TBA €",
         "deiInImage1": "/jpg/Google_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Google_IN_Takaa_Tuotekuva_4-5.jpg",
@@ -122,12 +123,12 @@
         "deiOutImage1": "/jpg/Google_OUT_Edesta_Tuotekuva_4-5.jpg",
         "deiOutImage2": "/jpg/Google_OUT_Takaa_Tuotekuva_4-5.jpg",
         "deiOutImageAlt": "'DEI OUT' Bomber jacket white turncoat shot in studio.",
-        "deiInHeadline": " What this coat used to stand for",
-        "deiInSubtitle": "What this coat used to stand for",
-        "deiInDescription": "This jacket used to offer experiences of belonging and diverse people creating better outcomes for business and community. Not anymore though.",
-        "deiOutHeadline": " What this coat used to stand for",
-        "deiOutSubtitle": "What this coat used to stand for",
-        "deiOutDescription": "This jacket used to offer experiences of belonging and diverse people creating better outcomes for business and community. Not anymore though.",
+        "deiInHeadline": " What our coat used to stand for",
+        "deiInSubtitle": "What our coat used to stand for",
+        "deiInDescription": "This jacket used to stand for racial equality and building a workforce that reflects the community it served. You can forget that now. ",
+        "deiOutHeadline": " What our coat used to stand for",
+        "deiOutSubtitle": "What our coat used to stand for",
+        "deiOutDescription": "This jacket used to stand for racial equality and building a workforce that reflects the community it served. You can forget that now. ",
         "availableSizes": [
           "White male 44",
           "White male 46",
@@ -142,7 +143,7 @@
           "Female 40",
           "Female 42"
         ],
-        "pagecta": "Lue lisää"
+        "pagecta": "Read more"
       },
       {
         "id": "coming-soon",
@@ -150,7 +151,10 @@
         "cardDescription": "The DEI rollback tour continues.",
         "title": "Coming soon: more turncoats.",
         "subtitle": "The DEI rollback tour continues.",
-        "price": "TBA €"
+        "price": "TBA €",
+        "deiOutImage1": "/jpg/Coming_soon_Tuotekuva_4-5.jpg",
+        "deiOutImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
+        "pagecta": "Read more"
       }
     ]
   }

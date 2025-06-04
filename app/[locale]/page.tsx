@@ -16,7 +16,7 @@ const getLocaleContent = async (locale: string): Promise<Content> => {
 export default async function LocalePage({
   params,
 }: {
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale: "fi" | "en" }>;
 }) {
   const { locale } = await params;
   const content = await getLocaleContent(locale);
@@ -24,16 +24,17 @@ export default async function LocalePage({
   return (
     <>
       <Hero
+        locale={locale}
         heading={content.hero.heroHeading}
-        ctaText={content.hero.heroCTA}
+        // ctaText={content.hero.heroCTA}
         subtitle={content.hero.heroSubtitle}
-        ctaLink={content.url}
+        // ctaLink={content.url}
         images={content.hero.images}
       />
       <CardCollection title={content.products.productsTitle}>
-        {(content.products.items as ProductItem[]).map((product) => (
+        {(content.products.items as ProductItem[]).map((product, index) => (
           <Card
-            key={product.id}
+            key={index}
             image1src={product.deiOutImage1}
             image2src={product.deiOutImage2}
             image1alt={product.deiOutImageAlt}
