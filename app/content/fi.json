@@ -25,7 +25,11 @@
     "heading": "Mistä on kyse?",
     "paragraph": "DEI-kääntötakit juhlistavat kaikkia suuryrityksiä, jotka käänsivät takkiaan työntekijöidensä yhdenvertaisuuden suhteen ja heittivät DEI-ohjelmansa (monimuotoisuus yhdenvertaisuus ja osallisuus) romukoppaan.",
     "ctaText": "Tutustu takkien tarinaan",
-    "ctaUrl": "/fi/about",
+    "ctaUrl": "/fi/about"
+  },
+  "aboutPage": {
+    "heading": "Tämä ei ole takkikauppa",
+    "subtitle": "Tämä on kannanotto yhdenvertaisuuden puolesta",
     "images": {
       "desktop": [
         "/jpg/Ekstrakuva_1_1920x1080.jpg",
@@ -35,11 +39,7 @@
         "/jpg/Ekstrakuva_1_1080x1350.jpg",
         "/jpg/Ekstrakuva_2_1080x1350.jpg"
       ]
-    }
-  },
-  "aboutPage": {
-    "heading": "Tämä ei ole takkikauppa",
-    "subtitle": "Tämä on kannanotto yhdenvertaisuuden puolesta",
+    },
     "headline": "Lyhyesti",
     "paragraph": "Aikana, jona globaalit brändit peruvat DEI-ohjelmiaan, me kannustamme suomalaisia yrityksiä ja ihmisiä puolustamaan yhdenvertaisuutta. Näissä asioissa emme voi kääntää takkiamme: DEI ei todellakaan ole out. \n\n Väestöliitto puolustaa yhdenvertaisuutta Suomessa ja maailmalla. Voit auttaa yksityisenä henkilönä tai yrityksenä lahjoittamalla naisten ja tyttöjen, vammaisten henkilöiden ja sateenkaari-ihmisten yhdenvertaisuutta ja seksuaalioikeuksia puolustavaan työhömme kehittyvissä maissa. \n\n Tukesi turvin yhä useampi voi elää ja toteuttaa unelmiaan juuri sellaisena kuin on.\n\n Yrityksille: jos haluatte yrityksenä olla vahvemmin mukana puolustamassa yhdenvertaisuutta, tarjoamme myös laajempia mahdollisuuksia yhteistyölle (ks. yhteystiedot)",
     "ctaText": "Lahjoittamaan",
