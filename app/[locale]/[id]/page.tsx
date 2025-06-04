@@ -47,7 +47,7 @@ export default async function ProductPage({
         deiOutImage1Src={product.deiOutImage1}
         deiOutImage2Src={product.deiOutImage2}
         deiOutImageAlt={product.deiOutImageAlt}
-        url={"/about"}
+        url={content.about.ctaUrl}
 		cta={product.pagecta}
       />
       <CardCollection
