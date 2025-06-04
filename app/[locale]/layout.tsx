@@ -8,6 +8,8 @@ import { Content } from "../util/types";
 import Script from "next/script";
 import Analytics from "../components/analytics";
 
+import { GoogleTagManager } from "@next/third-parties/google";
+
 export const metadata: Metadata = {
   title: "DEI Turncoats",
   description: "Equality is so last season.",
@@ -44,7 +46,7 @@ export default async function LocaleLayout({
       <body className={`bg-background no-scrollbar antialiased`}>
         <Nav locale={locale} />
         <Container>{children}</Container>
-		<Analytics />
+        <GoogleTagManager gtmId="GTM-PXXQCKC6" />
         <Footer locale={locale} legal={content.legal} />
       </body>
     </html>

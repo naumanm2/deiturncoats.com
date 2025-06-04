@@ -22,8 +22,7 @@ export default function Analytics() {
       ) {
         // Inject gtag.js
         const script = document.createElement("script");
-        script.src =
-          "https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID";
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-5FDMRQETWN";
         script.async = true;
         document.head.appendChild(script);
 
@@ -35,7 +34,7 @@ export default function Analytics() {
         }
 
         gtag("js", new Date());
-        gtag("config", "GA_MEASUREMENT_ID");
+        gtag("config", "G-5FDMRQETWN");
       }
     };
 
