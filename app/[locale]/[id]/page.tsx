@@ -48,11 +48,11 @@ export default async function ProductPage({
         deiOutImage2Src={product.deiOutImage2}
         deiOutImageAlt={product.deiOutImageAlt}
         url={content.about.ctaUrl}
-		cta={product.pagecta}
+        cta={product.pagecta}
       />
       <CardCollection
         title={
-          locale === "en" ? "Related products" : "Aiheeseen liittyvät tuotteet"
+          locale === "en" ? "Related products" : "Muut tuotteet"
         }
       >
         {content.products.items
