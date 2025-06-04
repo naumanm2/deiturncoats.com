@@ -25,7 +25,17 @@
     "heading": "Mistä on kyse?",
     "paragraph": "DEI-kääntötakit juhlistavat kaikkia suuryrityksiä, jotka käänsivät takkiaan työntekijöidensä yhdenvertaisuuden suhteen ja heittivät DEI-ohjelmansa (monimuotoisuus yhdenvertaisuus ja osallisuus) romukoppaan.",
     "ctaText": "Tutustu takkien tarinaan",
-    "ctaUrl": "/fi/about"
+    "ctaUrl": "/fi/about",
+    "images": {
+      "desktop": [
+        "/jpg/Ekstrakuva_1_1920x1080.jpg",
+        "/jpg/Ekstrakuva_2_1920x1080.jpg"
+      ],
+      "mobile": [
+        "/jpg/Ekstrakuva_1_1080x1350.jpg",
+        "/jpg/Ekstrakuva_2_1080x1350.jpg"
+      ]
+    }
   },
   "aboutPage": {
     "heading": "Tämä ei ole takkikauppa",

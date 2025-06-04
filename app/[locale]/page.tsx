@@ -26,9 +26,7 @@ export default async function LocalePage({
       <Hero
         locale={locale}
         heading={content.hero.heroHeading}
-        // ctaText={content.hero.heroCTA}
         subtitle={content.hero.heroSubtitle}
-        // ctaLink={content.url}
         images={content.hero.images}
       />
       <CardCollection title={content.products.productsTitle}>

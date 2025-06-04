@@ -23,7 +23,7 @@ export default async function Page({
       <Hero
         heading={content.aboutPage.heading}
         subtitle={content.aboutPage.subtitle}
-        images={content.hero.images}
+        images={content.aboutPage.images}
       />
       <Text
         heading={content.aboutPage.headline}
