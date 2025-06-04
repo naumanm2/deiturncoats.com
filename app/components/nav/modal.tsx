@@ -9,6 +9,7 @@ export default function Modal({
   children,
   visible,
   headline,
+  locale,
   onClose,
 }: {
   children:
@@ -16,6 +17,7 @@ export default function Modal({
     | ((props: { onClose: () => void }) => React.ReactNode);
   visible: boolean;
   headline?: string;
+  locale: "fi" | "en";
   onClose: () => void;
 }) {
   const [modalVisible, setModalVisible] = useState(visible);
@@ -115,7 +117,7 @@ export default function Modal({
               className="text-foreground hover:bg-stone-900/5 transition-colors duration-150 ease-in-out flex cursor-pointer flex-row items-center self-end rounded-md pl-2"
               onClick={handleClose}
             >
-              <span className="pt-0.5 font-bold uppercase">Close</span>
+              <span className="pt-0.5 font-bold uppercase">{locale=="fi" ? "Sulje" : "Close"}</span>
 
               <Close className="w-7 p-2" />
             </div>

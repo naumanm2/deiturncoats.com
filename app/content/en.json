@@ -1,12 +1,12 @@
 {
   "site": {
     "title": "DEI Turncoats",
-    "description": "Equality is so last season"
+    "description": "Equity is so last season "
   },
   "url": "https://vaestoliitto.lahjoitanyt.fi/deiturncoats",
   "hero": {
     "heroHeading": "DEI Turncoats",
-    "heroSubtitle": "Equality is so last season",
+    "heroSubtitle": "Equity is so last season ",
     "heroCTA": "Buy now",
     "images": {
       "desktop": [
@@ -52,10 +52,10 @@
       {
         "id": "the-return-coat",
         "cardTitle": "The Return Coat",
-        "cardDescription": "This black bomber jacket made the return from DEI champion to sellout faster than you can say “inclusion”.",
+        "cardDescription": "This jacket used to represent belonging and the power of diversity to drive better outcomes for business and community. Not anymore.",
         "title": "The Return Coat",
         "subtitle": "Diversity sent back to warehouse",
-        "price": "TBA €",
+        "price": "Explore",
         "deiInImage1": "/jpg/Amazon_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Amazon_IN_Takaa_Tuotekuva_4-5.jpg",
         "deiInImageAlt": "'DEI IN' Bomber jacket black turncoat shot in studio.",
@@ -89,8 +89,8 @@
         "cardTitle": "Magical Shift Jacket",
         "cardDescription": "This blue bomber jacket captures how quickly you can flip your fit on DEI.",
         "title": "Magical Shift Jacket",
-        "subtitle": "Our coat used to embrace inclusive storytelling, inspire dialogue and ensure we spoke to everyone. But that’s over now.",
-        "price": "TBA €",
+        "subtitle": "Our coat used to embrace inclusive storytelling, inspire dialogue and ensure we spoke to everyone. But that’s over now. ",
+        "price": "Explore",
         "deiInImage1": "/jpg/Disney_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Disney_IN_Takaa_Tuotekuva_4-5.jpg",
         "deiInImageAlt": "'DEI IN' Bomber jacket blue turncoat shot in studio.",
@@ -99,11 +99,11 @@
         "deiOutImageAlt": "'DEI OUT' Bomber jacket blue turncoat shot in studio.",
         "deiInHeadline": "What our coat used to stand for",
         "deiInSubtitle": "What our coat used to stand for",
-        "deiInDescription": "This jacket used to stand for racial equality and building a workforce that reflects the community it served. You can forget that now. ",
+        "deiInDescription": "Our coat used to embrace inclusive storytelling, inspire dialogue and ensure we spoke to everyone. But that’s over now.",
         "deiInImage": "/png/2-in.png",
         "deiOutHeadline": "What our coat used to stand for",
         "deiOutSubtitle": "What our coat used to stand for",
-        "deiOutDescription": "This jacket used to stand for racial equality and building a workforce that reflects the community it served. You can forget that now. ",
+        "deiOutDescription": "Our coat used to embrace inclusive storytelling, inspire dialogue and ensure we spoke to everyone. But that’s over now.",
         "availableSizes": [
           "White male 44",
           "White male 46",
@@ -126,7 +126,7 @@
         "cardDescription": "This white bomber jacket shifts like the values it’s missing — DEI in, DEI out.",
         "title": "Values-Not-Found Jacket",
         "subtitle": "This white bomber jacket shifts like the values it’s missing — DEI in, DEI out.",
-        "price": "TBA €",
+        "price": "Explore",
         "deiInImage1": "/jpg/Google_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Google_IN_Takaa_Tuotekuva_4-5.jpg",
         "deiInImageAlt": "'DEI IN' Bomber jacket white turncoat shot in studio.",
@@ -161,11 +161,15 @@
         "cardDescription": "The DEI rollback tour continues.",
         "title": "Coming soon: more turncoats.",
         "subtitle": "The DEI rollback tour continues.",
-        "price": "TBA €",
+        "price": "Explore",
         "deiOutImage1": "/jpg/Coming_soon_Tuotekuva_4-5.jpg",
         "deiOutImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
-        "pagecta": "Read more"
+        "pagecta": "Explore"
       }
     ]
+  },
+  "legal": {
+    "headline": "Legal disclaimer",
+    "paragraph": "This campaign is a work of social commentary. No real clothing is sold through this website.\n\nThe visual elements and phrases featured in this campaign are intentionally styled to resemble common branding aesthetics for the purpose of critique. They do not use actual trademarks or logos, nor are they affiliated with any commercial entities.\n\nOur aim is to spotlight a troubling global trend: the quiet retreat from DEI (Diversity, Equity & Inclusion) values in workplaces. The campaign is run by a non-profit organization and constitutes non-commercial, public interest expression.\n\nAny resemblance to brands is symbolic. If that resemblance feels uncomfortable, we invite reflection on why."
   }
 }

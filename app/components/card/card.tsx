@@ -3,6 +3,7 @@ import React from "react";
 import CardImage from "./card-image";
 import Image from "next/image";
 import Placeholder from "@/public/jpg/placeholder.png";
+import Arrow from "@/app/assets/svg/arrow.svg";
 
 type tCard = {
   image1src?: string;
@@ -29,7 +30,7 @@ export default function Card({
 }: tCard) {
   return (
     <Link
-      className="flex flex-col flex-1 group transition-all duration-300 ease-in-out h-max"
+      className="flex flex-col group transition-all duration-300 ease-in-out h-min"
       href={address}
     >
       {image1alt && image1src && image2alt && image2src && (
@@ -56,13 +57,20 @@ export default function Card({
         </div>
       )}
 
-      <div className="flex flex-col gap-2 mt-2">
+      <div className="flex flex-col flex-1 gap-2 mt-2 h-full">
         {eyebrow && (
           <p className="text-disabled-color capitalize py-2">{eyebrow}</p>
         )}
         {title && <h3 className=" group-hover:underline">{title}</h3>}
-        {description && <p>{description}</p>}
-        <strong className="">{price}</strong>
+        {description && (
+          <div className="flex-1">
+            <p className="flex-1">{description}</p>
+          </div>
+        )}
+        <div className="flex flex-row [&>*]:fill-black items-center gap-2">
+          <strong className="">{price}</strong>
+          <Arrow width="20px" />
+        </div>
       </div>
     </Link>
   );

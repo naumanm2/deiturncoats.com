@@ -17,7 +17,7 @@ export const ShoppingBasket = ({
   const isFinnish = locale === "fi";
 
   return (
-    <Modal visible={visible} onClose={onClose}>
+    <Modal visible={visible} onClose={onClose} locale={locale}>
       {({ onClose }) => (
         <div className="w-full flex-1 flex">
           <div className="w-full flex-1 flex flex-col justify-center text-center">

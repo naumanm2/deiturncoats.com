@@ -38,7 +38,7 @@ export default function Nav({ footer, locale }: NavProps) {
   };
 
   return (
-    <nav className="flex flex-col [&_button]:cursor-pointer navbar">
+    <nav className="flex flex-col [&_button]:cursor-pointer">
       <div
         className={cn(
           "flex flex-row justify-between items-center md:items-start max-w-screen-[1720px] h-16 md:h-24 p-4 md:p-8 w-full z-0 top-0",

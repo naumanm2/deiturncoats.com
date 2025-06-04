@@ -19,7 +19,12 @@ export const LanguageSwitcher = ({
   const newPath = `/${otherLocale}${localizedPath}`;
 
   return (
-    <Modal visible={visible} onClose={onClose} headline={locale==="fi" ? "Valitse kieli:" : "Language:"}>
+    <Modal
+      visible={visible}
+      onClose={onClose}
+      headline={locale === "fi" ? "Valitse kieli:" : "Language:"}
+      locale={locale}
+    >
       {({ onClose }) => (
         <div className="flex flex-col justify-end flex-1 gap-2">
           <h3 className="pb-16"></h3>

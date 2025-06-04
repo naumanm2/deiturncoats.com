@@ -52,10 +52,10 @@
       {
         "id": "the-return-coat",
         "cardTitle": "The Return Coat",
-        "cardDescription": "This black bomber jacket made the return from DEI champion to sellout faster than you can say “inclusion”.",
+        "cardDescription": "Tämä takki lähetti arvonsa takaisin menneisyyteen nopeammin kuin ehdit sanoa “yhdenvertaisuus”.",
         "title": "The Return Coat",
-        "subtitle": "Diversity sent back to warehouse",
-        "price": "TBA €",
+        "subtitle": "Tämä takki symboloi ennen yhteen kuulumisen kokemusta – uskoa, että monimuotoinen työyhteisö tuottaa parempia tuloksia myös yhteisöillemme. Ei tosin enää.",
+        "price": "Tutustu",
         "deiInImage1": "/jpg/Amazon_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Amazon_IN_Takaa_Tuotekuva_4-5.jpg",
         "deiInImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
@@ -89,8 +89,8 @@
         "cardTitle": "Magical Shift Jacket",
         "cardDescription": "Tämä sininen kääntötakki symboloi sitä, kuinka nopeasti voit kääntää arvosi DEI-arvojen suhteen.",
         "title": "Magical Shift Jacket",
-        "subtitle": "End of DEI",
-        "price": "TBA €",
+        "subtitle": "Takkimme halusi kannustaa osallistavaan tarinankerrontaan ja rohkaista avoimeen dialogiin. Mutta se oli silloin.",
+        "price": "Tutustu",
         "deiInImage1": "/jpg/Disney_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Disney_IN_Takaa_Tuotekuva_4-5.jpg",
         "deiInImageAlt": "'DEI IN' Sininen bomber -tyylinen takki kuvattuna mallin päällä.",
@@ -124,8 +124,8 @@
         "cardTitle": "Values-Not-Found Jacket",
         "cardDescription": "Tämä valkoinen kääntötakki unohti yhdenvertaisuuden ja suoritti haun uusille arvoille.",
         "title": "Values-Not-Found Jacket",
-        "subtitle": "Tämä valkoinen kääntötakki unohti yhdenvertaisuuden ja suoritti haun uusille arvoille.",
-        "price": "TBA €",
+        "subtitle": "Takkimme symboloi ennen etnisten ryhmien tasa-arvoisuutta ja kannusti palkkaamaan henkilöstöä monimuotoisemmin. Mutta eiköhän unohdeta moiset.",
+        "price": "Tutustu",
         "deiInImage1": "/jpg/Google_IN_Edesta_Tuotekuva_4-5.jpg",
         "deiInImage2": "/jpg/Google_IN_Takaa_Tuotekuva_4-5.jpg",
         "deiInImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
@@ -156,15 +156,19 @@
       },
       {
         "id": "coming-soon",
-        "cardTitle": "Coming soon: more turncoats.",
-        "cardDescription": "The DEI rollback tour continues.",
-        "title": "Coming soon: more turncoats.",
-        "subtitle": "The DEI rollback tour continues.",
-        "price": "TBA €",
+        "cardTitle": "Tulossa: lisää kääntötakkeja",
+        "cardDescription": "Yhdenvertaisuutta hylkivä mallistomme päivittyy.",
+        "title": "Tulossa: lisää kääntötakkeja",
+        "subtitle": "Yhdenvertaisuutta hylkivä mallistomme päivittyy.",
+        "price": "Tutustu",
         "deiOutImage1": "/jpg/Coming_soon_Tuotekuva_4-5.jpg",
         "deiOutImageAlt": "'DEI IN' Musta bomber -tyylinen takki kuvattuna mallin päällä.",
         "pagecta": "Lue lisää"
       }
     ]
+  },
+  "legal": {
+    "headline": "Oikeudellinen vastuuvapauslauseke",
+    "paragraph": "Tämä kampanja on yhteiskunnallinen kannanotto, eikä verkkosivustomme kautta myydä todellisia vaatteita.\n\n Kampanjassa käytetyt visuaaliset elementit ja ilmaisut muistuttavat tarkoituksella tavanomaista brändi-ilmettä – se vahvistaa kriittistä viestiämme. Ne eivät kuitenkaan sisällä todellisia tavaramerkkejä tai logoja, eivätkä liity mihinkään kaupallisiin toimijoihin.\n\n Tavoitteenamme on nostaa esiin huolestuttava ilmiö: työelämässä tapahtuva hiljainen vetäytyminen monimuotoisuuden, yhdenvertaisuuden ja osallisuuden (DEI) arvoista. Kampanjaa toteuttaa voittoa tavoittelematon järjestö, ja sen sisältö on ei-kaupallista, yleishyödyllistä ilmaisua.\n\n Mahdollinen samankaltaisuus tunnettuihin brändeihin on symbolista. Jos tämä tuntuu epämukavalta, toivomme sen herättävän pohdintaa aiheen tiimoilta."
   }
 }

@@ -48,4 +48,8 @@ export type Content = {
     productsTitle: string;
     items: ProductItem[];
   };
+  legal: {
+    headline:string;
+    paragraph:string;
+  }
 };

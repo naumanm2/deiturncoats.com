@@ -278,7 +278,7 @@ export default function ProductViewTwo({
               href={url}
             >
               <span className="font-bold text-white">{cta}</span>
-              <span className="text-white ">{price}</span>
+              <span className="text-white ">TBA €</span>
             </Link>
           </div>
         </div>
