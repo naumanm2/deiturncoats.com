@@ -17,14 +17,14 @@ export const Menu = ({ open, setOpen, locale }: tMenu) => {
               onClick={() => setOpen(!open)}
               className="font-bold text-4xl underline p-2 hover:opacity-80 transition-opacity duration-200 ease-in-out uppercase"
             >
-              {locale == "fi" ? "Koti": "Home"}
+              {locale == "fi" ? "Koti" : "Home"}
             </Link>
             <Link
               href={locale == "fi" ? `/${locale}/about` : `/${locale}/about`}
               onClick={() => setOpen(!open)}
               className="font-bold text-4xl underline p-2 hover:underline hover:opacity-80 transition-opacity duration-200 ease-in-out uppercase"
             >
-              {locale == "fi" ? "Meistä": "About"}
+              {locale == "fi" ? "Meistä" : "About"}
             </Link>
           </div>
         </div>
