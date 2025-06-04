@@ -1,7 +1,7 @@
 // app/[locale]/layout.tsx
 import type { Metadata } from "next";
 import "../globals.css";
-import Footer from "../components/footer";
+import Footer from "../components/footer/footer";
 import Container from "../components/container";
 import Nav from "../components/nav/nav";
 

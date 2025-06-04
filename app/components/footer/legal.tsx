@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Modal from "./modal";
+import Modal from "../nav/modal";
 import Arrow from "@/app/assets/svg/arrow.svg";
 
 export const LanguageSwitcher = ({
@@ -19,7 +19,11 @@ export const LanguageSwitcher = ({
   const newPath = `/${otherLocale}${localizedPath}`;
 
   return (
-    <Modal visible={visible} onClose={onClose} headline={locale==="fi" ? "Valitse kieli:" : "Language:"}>
+    <Modal
+      visible={visible}
+      onClose={onClose}
+      headline={locale == "fi" ? "Valitse kieli:" : "Language:"}
+    >
       {({ onClose }) => (
         <div className="flex flex-col justify-end flex-1 gap-2">
           <h3 className="pb-16"></h3>

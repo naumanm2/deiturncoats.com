@@ -19,10 +19,10 @@ export const ShoppingBasket = ({
   return (
     <Modal visible={visible} onClose={onClose}>
       {({ onClose }) => (
-        <div className="w-full flex-1">
-          <div className="w-full text-center">
-            <div className="my-16 mt-8">
-              <span className="text-stone-500 font-bold">
+        <div className="w-full flex-1 flex">
+          <div className="w-full flex-1 flex flex-col justify-center text-center">
+            <div className="flex items-center justify-center flex-1">
+              <span className="text-stone-500 font-bold pb-8">
                 {isFinnish
                   ? "Ostoskorisi on tyhjä"
                   : "Your shopping basket seems to be empty."}

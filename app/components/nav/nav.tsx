@@ -12,7 +12,6 @@ import { ShoppingBasket } from "./shopping-basket";
 import { Menu } from "./menu";
 import { LanguageSwitcher } from "./language-switcher";
 
-import CTA from "../cta";
 import { cn } from "@/lib/utils";
 
 export const PRODUCT_SLUGS = ["disney", "amazon", "google"];
