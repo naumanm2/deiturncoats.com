@@ -11,17 +11,14 @@ const nextConfig: NextConfig = {
       {
         source: "/press",
         destination: "https://deiturncoats.framer.website/",
-        permanent: true,
       },
       {
         source: "/en/press",
         destination: "https://deiturncoats.framer.website/",
-        permanent: true,
       },
       {
         source: "/fi/press",
         destination: "https://deiturncoats.framer.website/",
-        permanent: true,
       },
     ];
   },
