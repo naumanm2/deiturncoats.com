@@ -5,6 +5,8 @@ import Footer from "../components/footer/footer";
 import Container from "../components/container";
 import Nav from "../components/nav/nav";
 import { Content } from "../util/types";
+import Script from "next/script";
+import Analytics from "../components/analytics";
 
 export const metadata: Metadata = {
   title: "DEI Turncoats",
@@ -30,9 +32,19 @@ export default async function LocaleLayout({
   const content = await getLocaleContent(locale);
   return (
     <html lang={locale}>
+      <head>
+        {/* Usercentrics embed script */}
+        <Script
+          id="usercentrics-cmp"
+          strategy="beforeInteractive"
+          src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
+          data-settings-id="htyV7-Wo7mKYoa"
+        />
+      </head>
       <body className={`bg-background no-scrollbar antialiased`}>
         <Nav locale={locale} />
         <Container>{children}</Container>
+		<Analytics />
         <Footer locale={locale} legal={content.legal} />
       </body>
     </html>
