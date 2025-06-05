@@ -14,12 +14,16 @@ import { LanguageSwitcher } from "./language-switcher";
 
 import { cn } from "@/lib/utils";
 
-export const PRODUCT_SLUGS = ["disney", "amazon", "google"];
-
 type NavProps = {
   footer?: boolean;
   locale: "en" | "fi";
 };
+
+export const PRODUCT_SLUGS = [
+  "values-not-found-jacket",
+  "magical-shift-jacket",
+  "the-return-coat",
+];
 
 export default function Nav({ footer, locale }: NavProps) {
   const pathname = usePathname();

@@ -53,3 +53,5 @@ export type Content = {
     paragraph:string;
   }
 };
+
+export const PRODUCT_SLUGS = ["disney", "amazon", "google"];

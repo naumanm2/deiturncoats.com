@@ -16,6 +16,8 @@ export const ShoppingBasket = ({
     PRODUCT_SLUGS[Math.floor(Math.random() * PRODUCT_SLUGS.length)];
   const isFinnish = locale === "fi";
 
+
+
   return (
     <Modal visible={visible} onClose={onClose} locale={locale}>
       {({ onClose }) => (
