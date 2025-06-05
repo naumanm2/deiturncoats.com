@@ -90,11 +90,9 @@ export default function ProductViewTwo({
     touchEndX.current = e.changedTouches[0].screenX;
     if (touchStartX.current !== null && touchEndX.current !== null) {
       const delta = touchStartX.current - touchEndX.current;
-      if (delta > 50)
-        setCurrentImageIndex((prev) => (prev === 0 ? 4 - 1 : prev - 1));
+      if (delta > 50) handleNext();
       // swipe left
-      else if (delta < -50)
-        setCurrentImageIndex((prev) => (prev === 0 ? 4 - 1 : prev + 1)); // swipe right
+      else if (delta < -50) handlePrev();
     }
   };
 
