@@ -28,7 +28,11 @@ export default function Text({
         {signature && (
           <div className="mt-4 flex flex-col gap-4">{formatter(signature)}</div>
         )}
-        {image && <div className="mt-2 [&>svg]:w-48 md:[&>svg]:w-3xs"><Vaestoliitto /></div>}
+        {image && (
+          <div className="mt-2 [&>svg]:w-48 md:[&>svg]:w-3xs">
+            <Vaestoliitto />
+          </div>
+        )}
       </div>
     </div>
   );
