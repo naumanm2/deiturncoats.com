@@ -9,8 +9,8 @@ export default function CardCollection({
 }) {
   return (
     <div className="py-16 md:py-24">
-      <h2>{title}</h2>
-      <div className="flex flex-col md:flex-row gap-8 md:gap-4">{children}</div>
+      <h2 className="pb-6">{title}</h2>
+      <div className="flex flex-col md:flex-row gap-8 md:gap-4 items-stretch">{children}</div>
     </div>
   );
 }

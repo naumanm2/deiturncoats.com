@@ -2,33 +2,44 @@ import React from "react";
 
 import { cn } from "@/lib/utils";
 import Arrow from "@/app/assets/svg/arrow.svg";
+import Link from "next/link";
 
 type ctaOptions = {
   text: string;
   ghost?: boolean;
   primary?: boolean;
   disabled?: boolean;
+  url: string;
 };
 
-export default function CTA({ text, ghost, primary, disabled }: ctaOptions) {
+export default function CTA({
+  text,
+  ghost,
+  primary,
+  disabled,
+  url,
+}: ctaOptions) {
   return (
-    <button
+    <Link
+      href={url!}
       className={cn(
-        "px-3 py-1.5 rounded-full uppercase text-white -mx-0.5",
+        "px-3 py-2 rounded-lg bg-white/10 w-full md:w-max gap-4 flex flex-row items-center justify-between text-center uppercase text-white transition-color duration-300 ease-in-out -mx-1",
         ghost &&
-          "border-white border-[1px] flex flex-row gap-2 items-center hover:bg-white hover:text-black group transition-all duration-300 ease-in-out",
+          "border-slate-100/40 border flex font-bold flex-row backdrop-blur-2xl hover:backdrop-blur-sm active:backdrop-blur-lg gap-2 items-center group",
         primary &&
-          "bg-brand font-bold py-2 border-[1px] border-brand-border hover:bg-brand-hover active:bg-brand-active",
+          "bg-foreground font-bold py-2 border-[1px] transition-background hover:bg-[#232323] active:bg-[#282828] duration-200 ease-in-out cursor-pointer",
         disabled &&
-          "bg-disabled-background py-2 text-disabled-color hover:bg-disabled-background border-[1px] border-disabled-border font-medium"
+          "bg-disabled-background py-2 text-disabled-color border-[1px] border-disabled-border hover:bg-disabled pointer-events-none"
       )}
+      aria-disabled={disabled}
+      tabIndex={disabled ? -1 : undefined}
     >
-      {text}
-      {ghost && (
-        <div className="[&>svg]:h-3 [&>svg]:fill-white group-hover:[&>svg]:fill-black">
+      <span className="-mb-[1px]">{text}</span>
+      {(ghost || primary) && (
+        <div className="[&>svg]:h-3 [&>svg]:fill-white">
           <Arrow />
         </div>
       )}
-    </button>
+    </Link>
   );
 }

@@ -18,12 +18,12 @@ export default function Pill({
     <button
       onClick={handleClick}
       className={cn(
-        "rounded-full px-4 py-1 pb-1.5 uppercase cursor-pointer",
+        "rounded-full px-4 py-1 pb-1.5 uppercase cursor-pointer transition-color duration-300 ease-in-out",
         selected
           ? "bg-selected-background text-selected-color border-[1px] border-selected-border hover:opacity-90"
           : "bg-unselected-background text-unselected-color border-[1px] border-unselected-border hover:bg-unselected-background-hover",
         disabled &&
-          "bg-disabled-background text-disabled-color border-[1px] border-disabled-border cursor-auto"
+          "bg-disabled-background text-disabled-color border-[1px] border-disabled-border cursor-auto hover:bg-disabled-background"
       )}
     >
       <small>{text}</small>

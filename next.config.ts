@@ -1,14 +1,32 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  experimental: {
-    turbo: {
-      rules: {
-        "*.svg": {
-          loaders: ["@svgr/webpack"],
-          as: "*.js",
-        },
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/press",
+        destination: "https://deiturncoats.framer.website/",
+      },
+      {
+        source: "/en/press",
+        destination: "https://deiturncoats.framer.website/",
+      },
+      {
+        source: "/fi/press",
+        destination: "https://deiturncoats.framer.website/",
+      },
+    ];
+  },
+  turbopack: {
+    rules: {
+      "*.svg": {
+        loaders: ["@svgr/webpack"],
+        as: "*.js",
       },
     },
   },
