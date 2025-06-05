@@ -23,13 +23,13 @@
   },
   "about": {
     "heading": "About",
-    "paragraph": "DEI Turncoats celebrate all corporate turncoats who reversed their values overnight and scrapped their DEI (Diversity, Equity, and Inclusion) programs.",
+    "paragraph": "DEI Turncoats is a shoutout to all corporate turncoats who reversed their values overnight and scrapped their DEI (Diversity, Equity, and Inclusion) programs.",
     "ctaText": "Read more",
     "ctaUrl": "/en/about"
   },
   "aboutPage": {
-    "heading": "Tämä ei ole takkikauppa",
-    "subtitle": "Tämä on kannanotto yhdenvertaisuuden puolesta",
+    "heading": "This isn’t an online store",
+    "subtitle": "It’s a stand for equity",
     "images": {
       "desktop": [
         "/jpg/Ekstrakuva_1_1920x1080.jpg",
@@ -41,10 +41,10 @@
       ]
     },
     "headline": "Lyhyesti",
-    "paragraph": "Aikana, jona globaalit brändit peruvat DEI-ohjelmiaan, me kannustamme suomalaisia yrityksiä ja ihmisiä puolustamaan yhdenvertaisuutta. Näissä asioissa emme voi kääntää takkiamme: DEI ei todellakaan ole out. \n\n Väestöliitto puolustaa yhdenvertaisuutta Suomessa ja maailmalla. Voit auttaa yksityisenä henkilönä tai yrityksenä lahjoittamalla naisten ja tyttöjen, vammaisten henkilöiden ja sateenkaari-ihmisten yhdenvertaisuutta ja seksuaalioikeuksia puolustavaan työhömme kehittyvissä maissa. \n\n Tukesi turvin yhä useampi voi elää ja toteuttaa unelmiaan juuri sellaisena kuin on.\n\n Yrityksille: jos haluatte yrityksenä olla vahvemmin mukana puolustamassa yhdenvertaisuutta, tarjoamme myös laajempia mahdollisuuksia yhteistyölle (ks. yhteystiedot)",
-    "ctaText": "Lahjoittamaan",
+    "paragraph": "At a time when global brands are backing away from their DEI programs, we’re encouraging Finnish companies and individuals to stand up for equality. This is not the moment to turn our backs—DEI is definitely not out. \n\n Väestöliitto is committed to defending equality in Finland and around the world. The campaign gathers funds in Finland to support work promoting the rights and equality of women and girls, people with disabilities, and LGBTQ+ communities in developing countries. \n\n With your help, more people can live freely and chase their dreams—just as they are.\n\n For companies: If your business wants to take a stronger stand for equality, we offer broader partnership opportunities. (See contact details.)",
+    "ctaText": "Donate now",
     "ctaUrl": "https://vaestoliitto.lahjoitanyt.fi/deiturncoats",
-    "signature": "Kiitämme huomiosta ja tuesta tälle tärkeälle asialle. Väestöliitto \n\n *Yhteystiedot*: [lahjoitukset@vaestoliitto.fi](mailto:lahjoitukset@vaestoliitto.fi) \n\n *Väestöliiton rahankeräyslupa*: RA/2020/1558"
+    "signature": "Thank you for your attention and support for this important cause.\n\n *Väestöliitto ry* (Business ID 0202602-8) \n\n *Contact*: [lahjoitukset@vaestoliitto.fi](mailto:lahjoitukset@vaestoliitto.fi) \n\n * Väestöliitto fundraising permit*: RA/2020/1558"
   },
   "products": {
     "productsTitle": "Products",

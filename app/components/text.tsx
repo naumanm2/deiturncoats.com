@@ -21,7 +21,7 @@ export default function Text({
       <div className="flex-1 flex flex-col gap-4">
         {formatter(paragraph)}
         {ctaText && ctaUrl && <CTA text={ctaText} primary url={ctaUrl} />}
-        {signature && <div className="mt-4">{formatter(signature)}</div>}
+        {signature && <div className="mt-4 flex flex-col gap-4">{formatter(signature)}</div>}
       </div>
     </div>
   );

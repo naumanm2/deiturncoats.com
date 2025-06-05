@@ -35,13 +35,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
-        {/* Usercentrics embed script */}
-        {/* <Script
-          id="usercentrics-cmp"
-          strategy="beforeInteractive"
-          src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-          data-settings-id="htyV7-Wo7mKYoa"
-        /> */}
         <GoogleTagManager gtmId="GTM-PXXQCKC6" />
       </head>
       <body className={`bg-background no-scrollbar antialiased`}>
