@@ -36,17 +36,17 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <head>
         {/* Usercentrics embed script */}
-        <Script
+        {/* <Script
           id="usercentrics-cmp"
           strategy="beforeInteractive"
           src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
           data-settings-id="htyV7-Wo7mKYoa"
-        />
+        /> */}
+        <GoogleTagManager gtmId="GTM-PXXQCKC6" />
       </head>
       <body className={`bg-background no-scrollbar antialiased`}>
         <Nav locale={locale} />
         <Container>{children}</Container>
-        <GoogleTagManager gtmId="GTM-PXXQCKC6" />
         <Footer locale={locale} legal={content.legal} />
       </body>
     </html>
