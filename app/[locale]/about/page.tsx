@@ -31,6 +31,7 @@ export default async function Page({
         signature={content.aboutPage.signature}
         ctaText={content.aboutPage.ctaText}
         ctaUrl={content.aboutPage.ctaUrl}
+        image={true}
       />
     </>
   );
