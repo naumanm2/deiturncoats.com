@@ -18,9 +18,9 @@ export default function Footer({
   return (
     <footer className="z-0">
       <Nav locale={locale} footer />
-      <div className="flex flex-row mt-32 pb-12">
-        <div className="flex-1"></div>
-        <div className="flex-1">
+      <div className="flex flex-row mt-24 md:mt-32 pb-12">
+        <div className="flex-1 max-md:hidden"></div>
+        <div className="flex-1 px-2">
           <button onClick={() => setLegalOpen(true)} className="cursor-pointer">
             <small className="uppercase opacity-80">legal</small>
           </button>
