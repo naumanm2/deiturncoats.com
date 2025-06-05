@@ -12,7 +12,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "DEI Turncoats",
-  description: "Equality is so last season.",
+  description: "Equity is so last season.",
 };
 
 const getLocaleContent = async (locale: string): Promise<Content> => {
