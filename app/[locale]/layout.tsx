@@ -5,8 +5,7 @@ import Footer from "../components/footer/footer";
 import Container from "../components/container";
 import Nav from "../components/nav/nav";
 import { Content } from "../util/types";
-import Script from "next/script";
-import Analytics from "../components/analytics";
+import { Analytics } from "@vercel/analytics/next";
 
 import { GoogleTagManager } from "@next/third-parties/google";
 
@@ -41,6 +40,7 @@ export default async function LocaleLayout({
         <Nav locale={locale} />
         <Container>{children}</Container>
         <Footer locale={locale} legal={content.legal} />
+        <Analytics />
       </body>
     </html>
   );

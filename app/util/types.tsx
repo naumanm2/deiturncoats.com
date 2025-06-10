@@ -54,4 +54,3 @@ export type Content = {
   }
 };
 
-export const PRODUCT_SLUGS = ["disney", "amazon", "google"];
