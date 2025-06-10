@@ -14,7 +14,6 @@ export default function Footer({
   legal: { headline: string; paragraph: string };
 }) {
   const [legalOpen, setLegalOpen] = useState(false);
-  console.log(legal.headline);
   return (
     <footer className="z-0">
       <Nav locale={locale} footer />
